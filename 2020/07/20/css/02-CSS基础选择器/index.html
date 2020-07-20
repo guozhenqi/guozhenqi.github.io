@@ -504,6 +504,15 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/css/" class="post-category">
+                                css
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -542,12 +551,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="1-CSS选择器作用（重点）"><a href="#1-CSS选择器作用（重点）" class="headerlink" title="1. CSS选择器作用（重点）"></a>1. CSS选择器作用（重点）</h2><img src="/.io//ax.png">
-
-<p>如上图所以，要把里面的小黄人分为2组，最快的方法怎办？  </p>
-<p>很多， 比如 一只眼睛的一组，剩下的一组  </p>
-<h3 id="选择器的作用"><a href="#选择器的作用" class="headerlink" title="选择器的作用"></a>选择器的作用</h3><p>​    找到特定的HTML页面元素</p>
-<p><strong>pink老师一句话说出他们： ※※※※</strong></p>
+<h2 id="1-CSS选择器作用（重点）"><a href="#1-CSS选择器作用（重点）" class="headerlink" title="1. CSS选择器作用（重点）"></a>1. CSS选择器作用（重点）</h2><h3 id="选择器的作用"><a href="#选择器的作用" class="headerlink" title="选择器的作用"></a>选择器的作用</h3><p>​    找到特定的HTML页面元素</p>
 <blockquote>
 <p>*<em>CSS选择器干啥的？   选择标签用的， 把我们想要的标签选择出来 *</em>  必须记住的</p>
 </blockquote>
@@ -590,7 +594,7 @@
 }</code></pre><ul>
 <li>标签</li>
 </ul>
-<pre><code>&lt;p class=&#39;类名&#39;&gt;&lt;/p&gt;</code></pre></li>
+<pre><code>&lt;p class='类名'&gt;&lt;/p&gt;</code></pre></li>
 <li><p>优点：</p>
 <ul>
 <li>可以为元素对象定义单独或相同的样式。 可以选择一个或者多个标签 </li>
@@ -612,44 +616,7 @@
 <p>嘿嘿，工作类最多。</p>
 </li>
 </ul>
-<p><strong>课堂案例：</strong></p>
- <img src="/.io//go.png">
-
-
-
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
-
-        <span class="token selector"><span class="token class">.blue</span> </span><span class="token punctuation">{</span>
-            <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-            <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token selector"><span class="token class">.red</span> </span><span class="token punctuation">{</span>
-            <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
-            <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token selector"><span class="token class">.orange</span> </span><span class="token punctuation">{</span>
-            <span class="token property">color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
-            <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token selector"><span class="token class">.green</span> </span><span class="token punctuation">{</span>
-            <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
-            <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>blue<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>G<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>red<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>o<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>orange<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>o<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>blue<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>g<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>green<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>l<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>red<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>e<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre>
 <h3 id="2-3-类选择器特殊用法-多类名"><a href="#2-3-类选择器特殊用法-多类名" class="headerlink" title="2.3 类选择器特殊用法- 多类名"></a>2.3 类选择器特殊用法- 多类名</h3><p>我们可以给标签指定多个类名，从而达到更多的选择目的。</p>
-<img src="/.io//lei.png">
-
 <p>注意：</p>
 <ul>
 <li>各个类名中间用空格隔开。</li>
@@ -666,7 +633,7 @@
 <li><p>id选择器</p>
 <pre><code>#id名 {属性1:属性值1; 属性2:属性值2; 属性3:属性值3; }</code></pre></li>
 <li><p>标签</p>
-<pre><code>&lt;p id=&quot;id名&quot;&gt;&lt;/p&gt;</code></pre></li>
+<pre><code>&lt;p id="id名"&gt;&lt;/p&gt;</code></pre></li>
 </ul>
 </li>
 <li><p>元素的id值是唯一的，只能对应于文档中某一个具体的元素。</p>
@@ -674,9 +641,7 @@
 <li><p>用法基本和类选择器相同。</p>
 </li>
 </ul>
-<h4 id="id选择器和类选择器区别"><a href="#id选择器和类选择器区别" class="headerlink" title="id选择器和类选择器区别"></a>id选择器和类选择器区别</h4> <img src="/.io//zfb.jpg">
-
-<ul>
+<h4 id="id选择器和类选择器区别"><a href="#id选择器和类选择器区别" class="headerlink" title="id选择器和类选择器区别"></a>id选择器和类选择器区别</h4><ul>
 <li>W3C标准规定，在同一个页面内，不允许有相同名字的id对象出现，但是允许相同名字的class。<ul>
 <li>类选择器（class） 好比人的名字，  是可以多次重复使用的， 比如  张伟  王伟  李伟  李娜</li>
 <li>id选择器     好比人的身份证号码，  全中国是唯一的， 不得重复。 只能使用一次。</li>
@@ -759,7 +724,25 @@ p{}
 /* 不推荐 */
 *{}
 #jdc {}
-div{}   因为div 没有语义，我们尽量少用</code></pre>
+div{}   因为div 没有语义，我们尽量少用</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1024,8 +1007,12 @@ f
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            gzq
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/css/" class="post-category">
+                                    css
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1067,9 +1054,7 @@ css三种引用方式的书写
 
 
 
-
-
-1.HTML的局限性说起HTML，这其实是个非常单
+1.HTML的局限性说起HTML，这其实是个非常单纯的
                         
                     </div>
                     <div class="publish-info">
@@ -1078,8 +1063,12 @@ css三种引用方式的书写
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            gzq
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/css/" class="post-category">
+                                    css
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1439,7 +1428,12 @@ $(function () {
     
 
 
-</body>
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 
 <!--动态线条背景-->

@@ -504,6 +504,15 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/html/" class="post-category">
+                                html
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -527,43 +536,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>第01阶段.前端基础.表格</p>
-</blockquote>
-<h1 id="HTML-第二天目标"><a href="#HTML-第二天目标" class="headerlink" title="HTML 第二天目标"></a>HTML 第二天目标</h1><p> 能够利用表格、列表和表单完成注册页面的综合案例</p>
-<ul>
-<li>能出说表格用来做什么的</li>
-<li>能说出列表用来做什么的</li>
-<li>能说出表单用来做什么的</li>
-</ul>
-<p>为了让我们页面显示的更加整齐，我们需要学习三个表（表格、表单、列表）</p>
-<img src="/.io//guifan.png">
-
-<h1 id="表格-table-会使用"><a href="#表格-table-会使用" class="headerlink" title="表格 table(会使用)"></a>表格 table(会使用)</h1><p>目标：</p>
-<ul>
-<li>理解：<ul>
-<li>能说出表格用来做什么的</li>
-<li>表格的基本结构组成</li>
-</ul>
-</li>
-<li>应用：<ul>
-<li>能够熟练写出n行n列的表格</li>
-<li>能简单的合并单元格<br>​</li>
-</ul>
-</li>
-</ul>
-<img src="/.io//ttt.png" width="600">
-
-
-
-<p><strong>表格作用：</strong></p>
-<p>存在即是合理的。  表格的现在还是较为常用的一种标签，但不是用来布局，<strong>常见显示、展示表格式数据。</strong></p>
-<p>因为它可以让数据显示的非常的规整，可读性非常好。</p>
-<p><strong>特别是后台展示数据的时候表格运用是否熟练就显得很重要</strong>，一个清爽简约的表格能够把繁杂的数据表现得很有条理，虽然 div 布局也可以做到，但是总没有表格来得方便。</p>
-<img src="/.io//table.png">
-
-<p>ps:  这些地方用表格，你会觉得生活还是那么美好。。。。忍不住想说  PPAP i hava a pen  </p>
-<h2 id="1-创建表格"><a href="#1-创建表格" class="headerlink" title="1. 创建表格"></a>1. 创建表格</h2><p>在HTML网页中，要想创建表格，就需要使用表格相关的标签。</p>
+                <h2 id="1-创建表格"><a href="#1-创建表格" class="headerlink" title="1. 创建表格"></a>1. 创建表格</h2><p>在HTML网页中，要想创建表格，就需要使用表格相关的标签。</p>
 <p><strong>创建表格的基本语法：</strong></p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
@@ -579,34 +552,27 @@
 </li>
 <li><p>tr标签 用于定义表格中的行，必须嵌套在 table标签中。</p>
 </li>
-<li><p>td 用于定义表格中的单元格，必须嵌套在<tr></tr>标签中。</p>
+<li><p>td 用于定义表格中的单元格，必须嵌套在标签中。</p>
 </li>
 <li><p>字母 td 指表格数据（table data），即数据单元格的内容，现在我们明白，表格最合适的地方就是用来存储数据的。</p>
-<p>​</p>
 </li>
 </ol>
-<img src="/.io//07table基本结构.jpg">
-
 <p>*<em>总结： *</em></p>
 <ul>
 <li>表格的主要目的是用来显示特殊数据的</li>
 <li>一个完整的表格有表格标签（table），行标签（tr），单元格标签（td）组成，没有列的标签</li>
 </ul>
 <ul>
-<li><tr></tr>中只能嵌套<td></td> 类的单元格</li>
-<li><td></td>标签，他就像一个容器，可以容纳所有的元素
+<li>中只能嵌套 类的单元格</li>
+<li>标签，他就像一个容器，可以容纳所有的元素
 
 </li>
 </ul>
 <h2 id="2-表格属性"><a href="#2-表格属性" class="headerlink" title="2. 表格属性"></a>2. 表格属性</h2><p>表格有部分属性我们不常用，这里重点记住 cellspacing 、 cellpadding。</p>
-<img src="/.io//tt.png">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://s1.ax1x.com/2020/07/20/Uh0LW9.png">
 
 <p>我们经常有个说法，是三参为0，  平时开发的我们这三个参数    border  cellpadding  cellspacing  为  0</p>
-<img src="/.io//07table表格属性.jpg">
-
 <p><strong>案例1：</strong></p>
-<img src="/.io//表格效果01.png">
-
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>500<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>300<span class="token punctuation">"</span></span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">cellpadding</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span> <span class="token attr-name">cellspacing</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>姓名<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>性别<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>年龄<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>刘德华<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>男<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>55<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
@@ -616,23 +582,15 @@
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>刘晓庆<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>女<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>63<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span></code></pre>
 <h2 id="3-表头单元格标签th"><a href="#3-表头单元格标签th" class="headerlink" title="3. 表头单元格标签th"></a>3. 表头单元格标签th</h2><ul>
-<li><p>作用：</p>
-<ul>
+<li>作用：<ul>
 <li>一般表头单元格位于表格的第一行或第一列，并且文本加粗居中</li>
 </ul>
 </li>
-<li><p>语法：</p>
-<ul>
+<li>语法：<ul>
 <li>只需用表头标签&lt;th&gt;&lt;/th&gt;替代相应的单元格标签&lt;td&gt;&lt;/td&gt;即可。 </li>
 </ul>
-<img src="/.io//th.png">
-
 </li>
 </ul>
-<p><strong>案例2：</strong></p>
-<p>​    效果图</p>
-<img src="/.io//tht.png">
-
 <p>​    代码：</p>
 <hr>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>500<span class="token punctuation">"</span></span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>center<span class="token punctuation">"</span></span> <span class="token attr-name">cellspacing</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">cellpadding</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -652,7 +610,7 @@
             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>120<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>    
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span></code></pre>
-<p><strong>pink老师 一句话说出他们:</strong></p>
+<p><strong>一句话说出他们:</strong></p>
 <blockquote>
 <p>th 也是一个单元格   只不过和普通的 td单元格不一样，它会让自己里面的文字居中且加粗</p>
 </blockquote>
@@ -666,28 +624,20 @@
 <li>caption 标签必须紧随 table 标签之后。</li>
 <li>这个标签只存在 表格里面才有意义。你是风儿我是沙</li>
 </ol>
-<p><strong>案例3：</strong></p>
-<p>根据要求完成以下案例：</p>
-<img src="/.io//pa.png">
-
-
-
 <h2 id="5-合并单元格-难点"><a href="#5-合并单元格-难点" class="headerlink" title="5. 合并单元格(难点)"></a>5. 合并单元格(难点)</h2><p>合并单元格是我们比较常用的一个操作，但是不会合并的很复杂。</p>
-<img src="/.io//he.jpg">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://s1.ax1x.com/2020/07/20/UhBlWj.jpg">
 
 <h3 id="5-1-合并单元格2种方式"><a href="#5-1-合并单元格2种方式" class="headerlink" title="5.1 合并单元格2种方式"></a>5.1 合并单元格2种方式</h3><ul>
 <li>跨行合并：rowspan=”合并单元格的个数”      </li>
 <li>跨列合并：colspan=”合并单元格的个数”</li>
 </ul>
-<img src="/.io//08table合并单元格.jpg">
-
 <h3 id="5-2-合并单元格顺序"><a href="#5-2-合并单元格顺序" class="headerlink" title="5.2 合并单元格顺序"></a>5.2 合并单元格顺序</h3><blockquote>
 <p>*<em>合并的顺序我们按照   先上 后下     先左  后右 的顺序 *</em></p>
 </blockquote>
 <p>跟我们以前学习汉字的书写顺序完全一致。</p>
 <h3 id="5-3-合并单元格三步曲"><a href="#5-3-合并单元格三步曲" class="headerlink" title="5.3 合并单元格三步曲"></a>5.3 合并单元格三步曲</h3><ol>
 <li>先确定是跨行还是跨列合并</li>
-<li>根据 先上 后下   先左  后右的原则找到目标单元格    然后写上 合并方式 还有 要合并的单元格数量  比如 ： <td colspan="3">   </td></li>
+<li>根据 先上 后下   先左  后右的原则找到目标单元格    然后写上 合并方式 还有 要合并的单元格数量  比如 ：    </li>
 <li>删除多余的单元格 单元格      </li>
 </ol>
 <h2 id="6-总结表格"><a href="#6-总结表格" class="headerlink" title="6. 总结表格"></a>6. 总结表格</h2><table>
@@ -705,22 +655,22 @@
 </tr>
 <tr>
 <td></td></tr><tr></tr>
-<td align="left">表格行标签</td>
+<tr><td align="left">表格行标签</td>
 <td align="left">行标签要再table标签内部才有意义</td>
 
-<tr>
+</tr><tr>
 <td></td><td></td>
 <td align="left">单元格标签</td>
 <td align="left">单元格标签是个容器级元素，可以放任何东西</td>
 </tr>
 <tr>
-<td><th></th></td>
+<td></td><th></th>
 <td align="left">表头单元格标签</td>
 <td align="left">它还是一个单元格，但是里面的文字会居中且加粗</td>
 </tr>
 <tr>
-<td><caption></caption></td>
-<td align="left">表格标题标签</td>
+<td></td></tr></tbody><caption></caption>
+<tbody><tr><td align="left">表格标题标签</td>
 <td align="left">表格的标题，跟着表格一起走，和表格居中对齐</td>
 </tr>
 <tr>
@@ -736,16 +686,32 @@
 <li>表格不要纠结于外观，那是CSS 的作用。</li>
 <li>表格的学习要求：  能手写表格结构，并且能简单合并单元格。</li>
 </ol>
-<h2 id="7-拓展阅读"><a href="#7-拓展阅读" class="headerlink" title="7. 拓展阅读@"></a>7. 拓展阅读@</h2><h3 id="表格划分结构（了解）"><a href="#表格划分结构（了解）" class="headerlink" title="表格划分结构（了解）"></a>表格划分结构（了解）</h3><pre><code>对于比较复杂的表格，表格的结构也就相对的复杂了，所以又将表格分割成三个部分：题头、正文和脚注。而这三部分分别用:thead,tbody,tfoot来标注， 这样更好的分清表格结构</code></pre><img src="/.io//%E7%AC%94%E8%AE%B0/media/thead.png">
-
-<p><strong>注意：</strong></p>
+<h2 id="7-拓展阅读"><a href="#7-拓展阅读" class="headerlink" title="7. 拓展阅读@"></a>7. 拓展阅读@</h2><h3 id="表格划分结构（了解）"><a href="#表格划分结构（了解）" class="headerlink" title="表格划分结构（了解）"></a>表格划分结构（了解）</h3><pre><code>对于比较复杂的表格，表格的结构也就相对的复杂了，所以又将表格分割成三个部分：题头、正文和脚注。而这三部分分别用:thead,tbody,tfoot来标注， 这样更好的分清表格结构</code></pre><p><strong>注意：</strong></p>
 <ol>
-<li><thead></thead>：用于定义表格的头部。用来放标题之类的东西。<thead> 内部必须拥有 <tr> 标签！</tr></thead></li>
-<li><tbody></tbody>：用于定义表格的主体。放数据本体 。</li>
-<li><tfoot></tfoot>放表格的脚注之类。</li>
+<li>：用于定义表格的头部。用来放标题之类的东西。 内部必须拥有  标签！</li>
+<li>：用于定义表格的主体。放数据本体 。</li>
+<li>放表格的脚注之类。</li>
 <li>以上标签都是放到table标签中。</li>
 </ol>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1004,8 +970,11 @@
 
 
 
-问？
-前面我们知道表格一般用于数据展示的，但是网页中还是有很多跟表格类似的布
+
+概念：
+容器里面装载着结构，样式一致的文字或图表的一种形式，叫列表
+
+特点
                         
                     </div>
                     <div class="publish-info">
@@ -1014,8 +983,12 @@
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            gzq
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/html/" class="post-category">
+                                    html
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1068,8 +1041,12 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            gzq
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/html/" class="post-category">
+                                    html
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1429,7 +1406,12 @@ $(function () {
     
 
 
-</body>
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 
 <!--动态线条背景-->
