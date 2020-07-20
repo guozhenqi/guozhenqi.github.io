@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, null">
+    <meta name="keywords" content="js基础/JavaScript基础第06天笔记, null">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | null</title>
+    <title>js基础/JavaScript基础第06天笔记 | null</title>
     <link rel="icon" type="image/png" href="/lll.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -377,12 +377,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">js基础/JavaScript基础第06天笔记</h1>
                 </div>
             </div>
         </div>
@@ -511,7 +511,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-19
+                    2020-07-20
                 </div>
                 
 
@@ -527,15 +527,251 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h1 id="JavaScript基础第06天笔记"><a href="#JavaScript基础第06天笔记" class="headerlink" title="JavaScript基础第06天笔记"></a>JavaScript基础第06天笔记</h1><h2 id="1-内置对象"><a href="#1-内置对象" class="headerlink" title="1 - 内置对象"></a>1 - 内置对象</h2><h3 id="1-1-内置对象"><a href="#1-1-内置对象" class="headerlink" title="1.1 内置对象"></a>1.1 内置对象</h3><p>​         JavaScript 中的对象分为3种：<strong>自定义对象 、内置对象、 浏览器对象</strong><br>​        前面两种对象是JS 基础 内容，属于 ECMAScript；  第三个浏览器对象属于 JS 独有的， JS API 讲解内置对象就是指 JS 语言自带的一些对象，这些对象供开发者使用，并提供了一些常用的或是<strong>最基本而必要的功能</strong>（属性和方法），内置对象最大的优点就是帮助我们快速开发</p>
+<p>​         JavaScript 提供了多个内置对象：Math、 Date 、Array、String等    </p>
+<h3 id="1-2-查文档"><a href="#1-2-查文档" class="headerlink" title="1.2 查文档"></a>1.2 查文档</h3><p>​        查找文档：学习一个内置对象的使用，只要学会其常用成员的使用即可，我们可以通过查文档学习，可以通过MDN/W3C来查询。<br>​        Mozilla 开发者网络（MDN）提供了有关开放网络技术（Open Web）的信息，包括 HTML、CSS 和万维网及 HTML5 应用的 API。<br>​        MDN:<a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/</a></p>
+<h3 id="1-3-Math对象"><a href="#1-3-Math对象" class="headerlink" title="1.3 Math对象"></a>1.3 Math对象</h3><p>​        Math 对象不是构造函数，它具有数学常数和函数的属性和方法。跟数学相关的运算（求绝对值，取整、最大值等）可以使用 Math 中的成员。</p>
+<table>
+<thead>
+<tr>
+<th>属性、方法名</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Math.PI</td>
+<td>圆周率</td>
+</tr>
+<tr>
+<td>Math.floor()</td>
+<td>向下取整</td>
+</tr>
+<tr>
+<td>Math.ceil()</td>
+<td>向上取整</td>
+</tr>
+<tr>
+<td>Math.round()</td>
+<td>四舍五入版 就近取整   注意 -3.5   结果是  -3</td>
+</tr>
+<tr>
+<td>Math.abs()</td>
+<td>绝对值</td>
+</tr>
+<tr>
+<td>Math.max()/Math.min()</td>
+<td>求最大和最小值</td>
+</tr>
+<tr>
+<td>Math.random()</td>
+<td>获取范围在[0,1)内的随机值</td>
+</tr>
+</tbody></table>
+<p>​    注意：上面的方法使用时必须带括号</p>
+<p>​    <strong>获取指定范围内的随机整数</strong>：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">getRandom</span><span class="token punctuation">(</span>min<span class="token punctuation">,</span> max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>max <span class="token operator">-</span> min <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> min<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span></code></pre>
+<h3 id="1-4-日期对象"><a href="#1-4-日期对象" class="headerlink" title="1.4 日期对象"></a>1.4 日期对象</h3><p>​         Date 对象和 Math 对象不一样，Date是一个构造函数，所以使用时需要实例化后才能使用其中具体方法和属性。Date 实例用来处理日期和时间</p>
+<ul>
+<li><p>使用Date实例化日期对象</p>
+<ul>
+<li>获取当前时间必须实例化：</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> now <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li>获取指定时间的日期对象</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> future <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token string">'2019/5/1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>注意：如果创建实例时并未传入参数，则得到的日期对象是当前时间对应的日期对象</p>
+</li>
+<li><p>使用Date实例的方法和属性    </p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%871.png" alt></p>
+</li>
+<li><p>通过Date实例获取总毫米数</p>
+<ul>
+<li><p>总毫秒数的含义</p>
+<p>​    基于1970年1月1日（世界标准时间）起的毫秒数</p>
+</li>
+<li><p>获取总毫秒数</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 实例化Date对象</span>
+<span class="token keyword">var</span> now <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 1. 用于获取对象的原始值</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    
+<span class="token comment" spellcheck="true">// 2. 简单写可以这么做</span>
+<span class="token keyword">var</span> now <span class="token operator">=</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            
+<span class="token comment" spellcheck="true">// 3. HTML5中提供的方法，有兼容性问题</span>
+<span class="token keyword">var</span> now <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-5-数组对象"><a href="#1-5-数组对象" class="headerlink" title="1.5 数组对象"></a>1.5 数组对象</h3><h4 id="创建数组的两种方式"><a href="#创建数组的两种方式" class="headerlink" title="创建数组的两种方式"></a>创建数组的两种方式</h4><ul>
+<li><p>字面量方式</p>
+<ul>
+<li><p>示例代码如下：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"test"</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+</li>
+<li><p>new Array()</p>
+<ul>
+<li><p>示例代码如下：</p>
+<pre><code>var arr = new Array();</code></pre><p>​    注意：上面代码中arr创建出的是一个空数组，如果需要使用构造函数Array创建非空数组，可以在创建数组时传入参数</p>
+<p>​    参数传递规则如下：</p>
+<ul>
+<li><p>如果只传入一个参数，则参数规定了数组的长度</p>
+</li>
+<li><p>如果传入了多个参数，则参数称为数组的元素</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="检测是否为数组"><a href="#检测是否为数组" class="headerlink" title="检测是否为数组"></a>检测是否为数组</h4><ul>
+<li><p>instanceof 运算符</p>
+<ul>
+<li><p>instanceof 可以判断一个对象是否是某个构造函数的实例</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">23</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr <span class="token keyword">instanceof</span> <span class="token class-name">Array</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj <span class="token keyword">instanceof</span> <span class="token class-name">Array</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false</span></code></pre>
+</li>
+</ul>
+</li>
+<li><p>Array.isArray()</p>
+<ul>
+<li><p>Array.isArray()用于判断一个对象是否为数组，isArray() 是 HTML5 中提供的方法</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">23</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">// true</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">// false</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="添加删除数组元素的方法"><a href="#添加删除数组元素的方法" class="headerlink" title="添加删除数组元素的方法"></a>添加删除数组元素的方法</h4><ul>
+<li><p>数组中有进行增加、删除元素的方法，部分方法如下表</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%872.png" alt></p>
+<p>注意：push、unshift为增加元素方法；pop、shift为删除元素的方法</p>
+</li>
+</ul>
+<h4 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h4><ul>
+<li><p>数组中有对数组本身排序的方法，部分方法如下表</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%873.png" alt></p>
+<p>注意：sort方法需要传入参数来设置升序、降序排序</p>
+<ul>
+<li>如果传入“function(a,b){ return a-b;}”，则为升序</li>
+<li>如果传入“function(a,b){ return b-a;}”，则为降序</li>
+</ul>
+</li>
+</ul>
+<h4 id="数组索引方法"><a href="#数组索引方法" class="headerlink" title="数组索引方法"></a>数组索引方法</h4><ul>
+<li><p>数组中有获取数组指定元素索引值的方法，部分方法如下表</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%874.png" alt></p>
+</li>
+</ul>
+<h4 id="数组转换为字符串"><a href="#数组转换为字符串" class="headerlink" title="数组转换为字符串"></a>数组转换为字符串</h4><ul>
+<li><p>数组中有把数组转化为字符串的方法，部分方法如下表</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%875.png" alt></p>
+<p>注意：join方法如果不传入参数，则按照 “ , ”拼接元素</p>
+</li>
+</ul>
+<h4 id="其他方法"><a href="#其他方法" class="headerlink" title="其他方法"></a>其他方法</h4><ul>
+<li><p>数组中还有其他操作方法，同学们可以在课下自行查阅学习</p>
+<p>  <img src="/.io//images%5C%E5%9B%BE%E7%89%876.png" alt></p>
+</li>
+</ul>
+<h3 id="1-6-字符串对象"><a href="#1-6-字符串对象" class="headerlink" title="1.6 字符串对象"></a>1.6 字符串对象</h3><h4 id="基本包装类型"><a href="#基本包装类型" class="headerlink" title="基本包装类型"></a>基本包装类型</h4><p>​        为了方便操作基本数据类型，JavaScript 还提供了三个特殊的引用类型：String、Number和 Boolean。</p>
+<p>​        基本包装类型就是把简单数据类型包装成为复杂数据类型，这样基本数据类型就有了属性和方法。</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 下面代码有什么问题？</span>
+<span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">'andy'</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>​        按道理基本数据类型是没有属性和方法的，而对象才有属性和方法，但上面代码却可以执行，这是因为</p>
+<p>​        js 会把基本数据类型包装为复杂数据类型，其执行过程如下 ：</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 1. 生成临时变量，把简单类型包装为复杂数据类型</span>
+<span class="token keyword">var</span> temp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">'andy'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 2. 赋值给我们声明的字符变量</span>
+str <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 3. 销毁临时变量</span>
+temp <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></code></pre>
+<h4 id="字符串的不可变"><a href="#字符串的不可变" class="headerlink" title="字符串的不可变"></a>字符串的不可变</h4><p>​        指的是里面的值不可变，虽然看上去可以改变内容，但其实是地址变了，内存中新开辟了一个内存空间。</p>
+<p>​        当重新给字符串变量赋值的时候，变量之前保存的字符串不会被修改，依然在内存中重新给字符串赋值，会重新在内存中开辟空间，这个特点就是字符串的不可变。<br>​        由于字符串的不可变，在<strong>大量拼接字符串</strong>的时候会有效率问题</p>
+<h4 id="根据字符返回位置"><a href="#根据字符返回位置" class="headerlink" title="根据字符返回位置"></a>根据字符返回位置</h4><p>​        字符串通过基本包装类型可以调用部分方法来操作字符串，以下是返回指定字符的位置的方法：</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%877.png" alt></p>
+<p>​        案例：查找字符串”abcoefoxyozzopp”中所有o出现的位置以及次数</p>
+<ol>
+<li>先查找第一个o出现的位置</li>
+<li>然后 只要indexOf 返回的结果不是 -1 就继续往后查找</li>
+<li>因为indexOf 只能查找到第一个，所以后面的查找，利用第二个参数，当前索引加1，从而继续查找     </li>
+</ol>
+<h4 id="根据位置返回字符"><a href="#根据位置返回字符" class="headerlink" title="根据位置返回字符"></a>根据位置返回字符</h4><p>​        字符串通过基本包装类型可以调用部分方法来操作字符串，以下是根据位置返回指定位置上的字符：</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%878.png" alt></p>
+<p>​        在上述方法中，charCodeAt方法返回的是指定位置上字符对应的ASCII码，ASCII码对照表如下：</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%879.png" alt></p>
+<p>​        案例：判断一个字符串 ‘abcoefoxyozzopp’ 中出现次数最多的字符，并统计其次数</p>
+<ol>
+<li><p>核心算法：利用 charAt(） 遍历这个字符串</p>
+</li>
+<li><p>把每个字符都存储给对象， 如果对象没有该属性，就为1，如果存在了就 +1</p>
+</li>
+<li><p>遍历对象，得到最大值和该字符     </p>
+<p>​    注意：在遍历的过程中，把字符串中的每个字符作为对象的属性存储在对象总，对应的属性值是该字符出现的次数</p>
+</li>
+</ol>
+<h4 id="字符串操作方法"><a href="#字符串操作方法" class="headerlink" title="字符串操作方法"></a>字符串操作方法</h4><p>​        字符串通过基本包装类型可以调用部分方法来操作字符串，以下是部分操作方法：</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%8710.png" alt></p>
+<h4 id="replace-方法"><a href="#replace-方法" class="headerlink" title="replace()方法"></a>replace()方法</h4><p>​        replace() 方法用于在字符串中用一些字符替换另一些字符，其使用格式如下：  </p>
+<pre><code>字符串.replace(被替换的字符串， 要替换为的字符串)；</code></pre><h4 id="split-方法"><a href="#split-方法" class="headerlink" title="split()方法"></a>split()方法</h4><p>​        split()方法用于切分字符串，它可以将字符串切分为数组。在切分完毕之后，返回的是一个新数组。</p>
+<p>​        其使用格式如下：</p>
+<pre><code>字符串.split(&quot;分割字符&quot;)</code></pre><h2 id="2-简单数据类型和复杂数据类型"><a href="#2-简单数据类型和复杂数据类型" class="headerlink" title="2 - 简单数据类型和复杂数据类型"></a>2 - 简单数据类型和复杂数据类型</h2><h3 id="2-1-简单数据类型"><a href="#2-1-简单数据类型" class="headerlink" title="2.1 简单数据类型"></a>2.1 简单数据类型</h3><p>​        <strong>简单类型</strong>（<strong>基本数据类型</strong>、<strong>值类型</strong>）：在存储时变量中存储的是值本身，包括string ，number，boolean，undefined，null</p>
+<h3 id="2-2-复杂数据类型"><a href="#2-2-复杂数据类型" class="headerlink" title="2.2 复杂数据类型"></a>2.2 复杂数据类型</h3><p>​        <strong>复杂数据类型（引用类型）</strong>：在存储时变量中存储的仅仅是地址（引用），通过 new 关键字创建的对象（系统对象、自定义对象），如 Object、Array、Date等；</p>
+<h3 id="2-3-堆栈"><a href="#2-3-堆栈" class="headerlink" title="2.3 堆栈"></a>2.3 堆栈</h3><ul>
+<li>堆栈空间分配区别：</li>
+</ul>
+<p>　　1、栈（操作系统）：由操作系统自动分配释放存放函数的参数值、局部变量的值等。其操作方式类似于数据结构中的栈；</p>
+<p>简单数据类型存放到栈里面</p>
+<p>　　2、堆（操作系统）：存储复杂类型(对象)，一般由程序员分配释放，若程序员不释放，由垃圾回收机制回收。</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%8711.png" alt></p>
+<ul>
+<li><p>简单数据类型的存储方式</p>
+<p>​        值类型变量的数据直接存放在变量（栈空间）中</p>
+</li>
+</ul>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%8712.png" alt></p>
+<ul>
+<li><p>复杂数据类型的存储方式</p>
+<p>​        引用类型变量（栈空间）里存放的是地址，真正的对象实例存放在堆空间中</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%8713.png" alt></p>
+</li>
+</ul>
+<h3 id="2-4-简单类型传参"><a href="#2-4-简单类型传参" class="headerlink" title="2.4 简单类型传参"></a>2.4 简单类型传参</h3><p>​        函数的形参也可以看做是一个变量，当我们把一个值类型变量作为参数传给函数的形参时，其实是把变量在栈空间里的值复制了一份给形参，那么在方法内部对形参做任何修改，都不会影响到的外部变量。</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    a<span class="token operator">++</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token function">fn</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>；</code></pre>
+<p>​        运行结果如下：</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%8714.png" alt></p>
+<h3 id="2-5-复杂数据类型传参"><a href="#2-5-复杂数据类型传参" class="headerlink" title="2.5 复杂数据类型传参"></a>2.5 复杂数据类型传参</h3><p>​        函数的形参也可以看做是一个变量，当我们把引用类型变量传给形参时，其实是把变量在栈空间里保存的堆地址复制给了形参，形参和实参其实保存的是同一个堆地址，所以操作的是同一个对象。</p>
+<pre class=" language-JavaScript"><code class="language-JavaScript">function Person(name) {
+    this.name = name;
+}
+function f1(x) { // x = p
+    console.log(x.name); // 2. 这个输出什么 ?    
+    x.name = "张学友";
+    console.log(x.name); // 3. 这个输出什么 ?    
+}
+var p = new Person("刘德华");
+console.log(p.name);    // 1. 这个输出什么 ?   
+f1(p);
+console.log(p.name);    // 4. 这个输出什么 ?  </code></pre>
+<p>​        运行结果如下：</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%8715.png" alt></p>
 
             </div>
             <hr/>
@@ -561,7 +797,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://guozhenqi.github.io/2020/07/19/hello-world/">https://guozhenqi.github.io/2020/07/19/hello-world/</a>
+                    <a href="https://guozhenqi.github.io/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC06%E5%A4%A9%E7%AC%94%E8%AE%B0/">https://guozhenqi.github.io/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC06%E5%A4%A9%E7%AC%94%E8%AE%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -768,65 +1004,36 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/19/%E6%97%B6%E6%80%81%E5%92%8C%E8%AF%AD%E6%80%81/">
+                <a href="/2020/07/20/js%E9%AB%98%E7%BA%A7/JavaScript%E9%AB%98%E7%BA%A7%E7%AC%AC01%E5%A4%A9%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="时态和语态">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="js高级/JavaScript高级第01天笔记">
                         
-                        <span class="card-title">时态和语态</span>
+                        <span class="card-title">js高级/JavaScript高级第01天笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            时态和语态动词时态
+                            JavaScript高级第01天笔记1.面向过程与面向对象1.1面向过程
+面向过程就是分析出解决问题所需要的步骤，然后用函数把这些步骤一步一步实现，使用的时候再一个一个的依次调用就可以了。
 
-
-
-现在
-过去
-将来
-过去将来
-
-
-
-一般
-ask/asks
-asked
-shall/will ask
-should/would ask
-
-
-进行
-am/is/are
-was/were asking
-shall/wil
+1.2面向对象
+面向对象是把事务分解成为一个个对
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%8B%B1%E8%AF%AD/" class="post-category">
-                                    英语
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            gzq
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">英语学习</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -835,27 +1042,27 @@ shall/wil
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/19/hello-world/">
+                <a href="/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC05%E5%A4%A9%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="js基础/JavaScript基础第05天笔记">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">js基础/JavaScript基础第05天笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            JavaScript基础第05天笔记1 - 作用域1.1 作用域概述通常来说，一段程序代码中所用到的名字并不总是有效和可用的，而限定这个名字的可用性的代码范围就是这个名字的作用域。作用域的使用提高了程序逻辑的局部性，增强了程序的可靠性，减少
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                             </span>
                         <span class="publish-author">
                             
@@ -865,7 +1072,6 @@ shall/wil
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

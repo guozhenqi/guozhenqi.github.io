@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, null">
+    <meta name="keywords" content="js基础/JavaScript基础第03天笔记, null">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | null</title>
+    <title>js基础/JavaScript基础第03天笔记 | null</title>
     <link rel="icon" type="image/png" href="/lll.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -377,12 +377,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">js基础/JavaScript基础第03天笔记</h1>
                 </div>
             </div>
         </div>
@@ -511,7 +511,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-19
+                    2020-07-20
                 </div>
                 
 
@@ -527,15 +527,189 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h1 id="JavaScript基础第03天笔记"><a href="#JavaScript基础第03天笔记" class="headerlink" title="JavaScript基础第03天笔记"></a>JavaScript基础第03天笔记</h1><h2 id="1-循环"><a href="#1-循环" class="headerlink" title="1 - 循环"></a>1 - 循环</h2><h3 id="1-1-for循环"><a href="#1-1-for循环" class="headerlink" title="1.1 for循环"></a>1.1 for循环</h3><ul>
+<li><p>语法结构</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">for</span><span class="token punctuation">(</span>初始化变量<span class="token punctuation">;</span> 条件表达式<span class="token punctuation">;</span> 操作表达式 <span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//循环体</span>
+<span class="token punctuation">}</span></code></pre>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>初始化变量</td>
+<td>通常被用于初始化一个计数器，该表达式可以使用 var 关键字声明新的变量，这个变量帮我们来记录次数。</td>
+</tr>
+<tr>
+<td>条件表达式</td>
+<td>用于确定每一次循环是否能被执行。如果结果是 true 就继续循环，否则退出循环。</td>
+</tr>
+<tr>
+<td>操作表达式</td>
+<td>用于确定每一次循环是否能被执行。如果结果是 true 就继续循环，否则退出循环。</td>
+</tr>
+</tbody></table>
+<p>执行过程：</p>
+<ol>
+<li>初始化变量，初始化操作在整个 for 循环只会执行一次。</li>
+</ol>
+</li>
+<li><p>执行条件表达式，如果为true，则执行循环体语句，否则退出循环，循环结束。</p>
+</li>
+</ul>
+<ol>
+<li>执行操作表达式，此时第一轮结束。</li>
+<li>第二轮开始，直接去执行条件表达式（不再初始化变量），如果为 true ，则去执行循环体语句，否则退出循环。</li>
+<li>继续执行操作表达式，第二轮结束。</li>
+<li>后续跟第二轮一致，直至条件表达式为假，结束整个 for 循环。</li>
+</ol>
+<p>断点调试：</p>
+<pre><code>    断点调试是指自己在程序的某一行设置一个断点，调试时，程序运行到这一行就会停住，然后你可以一步一步往下调试，调试过程中可以看各个变量当前的值，出错的话，调试到出错的代码行即显示错误，停下。断点调试可以帮助观察程序的运行过程</code></pre><pre class=" language-html"><code class="language-html">断点调试的流程：
+1、浏览器中按 F12--> sources -->找到需要调试的文件-->在程序的某一行设置断点
+2、Watch: 监视，通过watch可以监视变量的值的变化，非常的常用。
+3、摁下F11，程序单步执行，让程序一行一行的执行，这个时候，观察watch中变量的值的变化。</code></pre>
+<ul>
+<li><p>for 循环重复相同的代码</p>
+<p>比如输出10句“媳妇我错了”</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">//  基本写法</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'媳妇我错了~'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// 用户输入次数</span>
+<span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'请输入次数:'</span><span class="token punctuation">)</span>；
+<span class="token keyword">for</span> <span class="token punctuation">(</span> <span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'媳妇我错了~'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> </code></pre>
+</li>
+<li><p>for 循环重复不相同的代码</p>
+<p>例如，求输出1到100岁：</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">//  基本写法</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'这个人今年'</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">'岁了'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>例如，求输出1到100岁，并提示出生、死亡</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// for 里面是可以添加其他语句的 </span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'这个人今年1岁了， 它出生了'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'这个人今年100岁了，它死了'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+       console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'这个人今年'</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">'岁了'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>for循环因为有了计数器的存在，还可以重复的执行某些操作，比如做一些算术运算。</p>
+</li>
+</ul>
+<h3 id="1-2-双重for循环"><a href="#1-2-双重for循环" class="headerlink" title="1.2 双重for循环"></a>1.2 双重for循环</h3><ul>
+<li><p>双重 for 循环概述</p>
+<pre><code>        循环嵌套是指在一个循环语句中再定义一个循环语句的语法结构，例如在for循环语句中，可以再嵌套一个for 循环，这样的 for 循环语句我们称之为双重for循环。</code></pre></li>
+<li><p>双重 for 循环语法</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span>外循环的初始<span class="token punctuation">;</span> 外循环的条件<span class="token punctuation">;</span> 外循环的操作表达式<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>内循环的初始<span class="token punctuation">;</span> 内循环的条件<span class="token punctuation">;</span> 内循环的操作表达式<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+       需执行的代码<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li>内层循环可以看做外层循环的循环体语句</li>
+<li>内层循环执行的顺序也要遵循 for 循环的执行顺序 </li>
+<li>外层循环执行一次，内层循环要执行全部次数</li>
+</ul>
+</li>
+<li><p>打印五行五列星星</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> star <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> <span class="token number">3</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      star <span class="token operator">+</span><span class="token operator">=</span> <span class="token string">'☆'</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">// 每次满 5个星星 就 加一次换行</span>
+    star <span class="token operator">+</span><span class="token operator">=</span> <span class="token string">'\n'</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>star<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>核心逻辑：</p>
+<p>1.内层循环负责一行打印五个星星</p>
+<p>2.外层循环负责打印五行</p>
+</li>
+<li><p>for 循环小结</p>
+<ul>
+<li>for 循环可以重复执行某些相同代码</li>
+<li>for 循环可以重复执行些许不同的代码，因为我们有计数器</li>
+<li>for 循环可以重复执行某些操作，比如算术运算符加法操作</li>
+<li>随着需求增加，双重for循环可以做更多、更好看的效果</li>
+<li>双重 for 循环，外层循环一次，内层 for 循环全部执行</li>
+<li>for 循环是循环条件和数字直接相关的循环</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-3-while循环"><a href="#1-3-while循环" class="headerlink" title="1.3 while循环"></a>1.3 while循环</h3><p>while语句的语法结构如下：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">while</span> <span class="token punctuation">(</span>条件表达式<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 循环体代码 </span>
+<span class="token punctuation">}</span></code></pre>
+<p>执行思路：</p>
+<ul>
+<li>1 先执行条件表达式，如果结果为 true，则执行循环体代码；如果为 false，则退出循环，执行后面代码</li>
+<li>2 执行循环体代码</li>
+<li>3 循环体代码执行完毕后，程序会继续判断执行条件表达式，如条件仍为true，则会继续执行循环体，直到循环条件为 false 时，整个循环过程才会结束</li>
+</ul>
+<p>注意：</p>
+<ul>
+<li>使用 while 循环时一定要注意，它必须要有退出条件，否则会成为死循环</li>
+</ul>
+<h3 id="1-4-do-while循环"><a href="#1-4-do-while循环" class="headerlink" title="1.4 do-while循环"></a>1.4 do-while循环</h3><p>do… while 语句的语法结构如下：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">do</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 循环体代码 - 条件表达式为 true 时重复执行循环体代码</span>
+<span class="token punctuation">}</span> <span class="token keyword">while</span><span class="token punctuation">(</span>条件表达式<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>执行思路</p>
+<ul>
+<li><p>1 先执行一次循环体代码 </p>
+</li>
+<li><p>2 再执行条件表达式，如果结果为 true，则继续执行循环体代码，如果为 false，则退出循环，继续执行后面代码    </p>
+<p>注意：先再执行循环体，再判断，do…while循环语句至少会执行一次循环体代码</p>
+</li>
+</ul>
+<h3 id="1-5-continue、break"><a href="#1-5-continue、break" class="headerlink" title="1.5 continue、break"></a>1.5 continue、break</h3><p>continue 关键字用于立即跳出本次循环，继续下一次循环（本次循环体中 continue 之后的代码就会少执行一次）。</p>
+<p>例如，吃5个包子，第3个有虫子，就扔掉第3个，继续吃第4个第5个包子，其代码实现如下：</p>
+<pre class=" language-js"><code class="language-js"> <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'这个包子有虫子，扔掉'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token keyword">continue</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 跳出本次循环，跳出的是第3次循环 </span>
+      <span class="token punctuation">}</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我正在吃第'</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">'个包子呢'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span></code></pre>
+<p>运行结果：</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%871.png" alt></p>
+<p>  break 关键字用于立即跳出整个循环（循环结束）。</p>
+<p>  例如，吃5个包子，吃到第3个发现里面有半个虫子，其余的不吃了，其代码实现如下：</p>
+<pre class=" language-js"><code class="language-js">  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token keyword">break</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 直接退出整个for 循环，跳到整个for下面的语句</span>
+     <span class="token punctuation">}</span>
+     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我正在吃第'</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">'个包子呢'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span></code></pre>
+<p>  运行结果：</p>
+<p>  <img src="/.io//images%5C%E5%9B%BE%E7%89%872.png" alt></p>
+<h2 id="2-代码规范"><a href="#2-代码规范" class="headerlink" title="2 - 代码规范"></a>2 - 代码规范</h2><h3 id="2-1-标识符命名规范"><a href="#2-1-标识符命名规范" class="headerlink" title="2.1 标识符命名规范"></a>2.1 标识符命名规范</h3><ul>
+<li>变量、函数的命名必须要有意义</li>
+<li>变量的名称一般用名词  </li>
+<li>函数的名称一般用动词  </li>
+</ul>
+<h3 id="2-2-操作符规范"><a href="#2-2-操作符规范" class="headerlink" title="2.2 操作符规范"></a>2.2 操作符规范</h3><pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 操作符的左右两侧各保留一个空格</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">break</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 直接退出整个 for 循环，跳到整个for循环下面的语句</span>
+   <span class="token punctuation">}</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我正在吃第'</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">'个包子呢'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="2-3-单行注释规范"><a href="#2-3-单行注释规范" class="headerlink" title="2.3 单行注释规范"></a>2.3 单行注释规范</h3><pre class=" language-js"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">break</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 单行注释前面注意有个空格</span>
+   <span class="token punctuation">}</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我正在吃第'</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">'个包子呢'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="2-4-其他规范"><a href="#2-4-其他规范" class="headerlink" title="2.4 其他规范"></a>2.4 其他规范</h3><pre><code>关键词、操作符之间后加空格</code></pre><p><img src="/.io//images%5C%E5%9B%BE%E7%89%873.png" alt></p>
 
             </div>
             <hr/>
@@ -561,7 +735,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://guozhenqi.github.io/2020/07/19/hello-world/">https://guozhenqi.github.io/2020/07/19/hello-world/</a>
+                    <a href="https://guozhenqi.github.io/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC03%E5%A4%A9%E7%AC%94%E8%AE%B0/">https://guozhenqi.github.io/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC03%E5%A4%A9%E7%AC%94%E8%AE%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -768,65 +942,34 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/19/%E6%97%B6%E6%80%81%E5%92%8C%E8%AF%AD%E6%80%81/">
+                <a href="/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC04%E5%A4%A9%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="时态和语态">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="js基础/JavaScript基础第04天笔记">
                         
-                        <span class="card-title">时态和语态</span>
+                        <span class="card-title">js基础/JavaScript基础第04天笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            时态和语态动词时态
-
-
-
-现在
-过去
-将来
-过去将来
-
-
-
-一般
-ask/asks
-asked
-shall/will ask
-should/would ask
-
-
-进行
-am/is/are
-was/were asking
-shall/wil
+                            JavaScript基础第04天笔记1 - 数组1.1 数组的概念
+数组可以把一组相关的数据一起存放，并提供方便的访问(获取）方式。
+数组是指一组数据的集合，其中的每个数据被称作元素，在数组中可以存放任意类型的元素。数组是一种将一组数据存储
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%8B%B1%E8%AF%AD/" class="post-category">
-                                    英语
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            gzq
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">英语学习</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -835,27 +978,31 @@ shall/wil
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/19/hello-world/">
+                <a href="/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC02%E5%A4%A9%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="js基础/JavaScript基础第02天笔记">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">js基础/JavaScript基础第02天笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            JavaScript基础第02天1 - 运算符（操作符）1.1 运算符的分类运算符（operator）也被称为操作符，是用于实现赋值、比较和执行算数运算等功能的符号。
+JavaScript中常用的运算符有：
+算数运算符
+递增和递减运算符
+比
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                             </span>
                         <span class="publish-author">
                             
@@ -865,7 +1012,6 @@ shall/wil
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

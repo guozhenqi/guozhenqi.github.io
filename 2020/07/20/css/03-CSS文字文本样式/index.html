@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, null">
+    <meta name="keywords" content="css/03-CSS文字文本样式, null">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | null</title>
+    <title>css/03-CSS文字文本样式 | null</title>
     <link rel="icon" type="image/png" href="/lll.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -377,12 +377,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">css/03-CSS文字文本样式</h1>
                 </div>
             </div>
         </div>
@@ -511,7 +511,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-19
+                    2020-07-20
                 </div>
                 
 
@@ -527,15 +527,429 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h1 id="CSS字体样式属性调试工具"><a href="#CSS字体样式属性调试工具" class="headerlink" title="CSS字体样式属性调试工具"></a>CSS字体样式属性调试工具</h1><p> 目标</p>
+<ul>
+<li>应用<ul>
+<li>使用css字体样式完成对字体的设置</li>
+<li>使用css外观属性给页面元素添加样式</li>
+<li>使用常用的emment语法</li>
+<li>能够使用开发人员工具代码调试</li>
+</ul>
+</li>
+</ul>
+<h1 id="1-font字体"><a href="#1-font字体" class="headerlink" title="1.font字体"></a>1.font字体</h1><h2 id="1-1-font-size-大小"><a href="#1-1-font-size-大小" class="headerlink" title="1.1 font-size:大小"></a>1.1 font-size:大小</h2><ul>
+<li><p>作用：</p>
+<p>font-size属性用于设置字号</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector">p </span><span class="token punctuation">{</span>  
+    <span class="token property">font-size</span><span class="token punctuation">:</span><span class="token number">20</span>px<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li><p>单位：</p>
+<ul>
+<li>可以使用相对长度单位，也可以使用绝对长度单位。</li>
+<li>相对长度单位比较常用，推荐使用像素单位px，绝对长度单位使用较少。</li>
+</ul>
+</li>
+</ul>
+<img src="/.io//dd.png">
+
+<p><strong>注意：</strong></p>
+<ul>
+<li>我们文字大小以后，基本就用px了，其他单位很少使用</li>
+<li>谷歌浏览器默认的文字大小为16px</li>
+<li>但是不同浏览器可能默认显示的字号大小不一致，我们尽量给一个明确值大小，不要默认大小。一般给body指定整个页面文字的大小</li>
+</ul>
+<h2 id="1-2-font-family-字体"><a href="#1-2-font-family-字体" class="headerlink" title="1.2 font-family:字体"></a>1.2 font-family:字体</h2><ul>
+<li><p>作用：</p>
+<p>font-family属性用于设置哪一种字体。</p>
+</li>
+</ul>
+<pre><code>p{ font-family:&quot;微软雅黑&quot;;}</code></pre><ul>
+<li>网页中常用的字体有宋体、微软雅黑、黑体等，例如将网页中所有段落文本的字体设置为微软雅黑</li>
+<li>可以同时指定多个字体，中间以逗号隔开，表示如果浏览器不支持第一个字体，则会尝试下一个，直到找到合适的字体， 如果都没有，则以我们电脑默认的字体为准。</li>
+</ul>
+<pre><code>p{font-family: Arial,&quot;Microsoft Yahei&quot;, &quot;微软雅黑&quot;;}</code></pre><blockquote>
+<p><img src="/.io//good.png">常用技巧：</p>
+</blockquote>
+<pre><code>1. 各种字体之间必须使用英文状态下的逗号隔开。
+2. 中文字体需要加英文状态下的引号，英文字体一般不需要加引号。当需要设置英文字体时，英文字体名必须位于中文字体名之前。
+3. 如果字体名中包含空格、#、$等符号，则该字体必须加英文状态下的单引号或双引号，例如font-family: &quot;Times New Roman&quot;;。
+4. 尽量使用系统默认字体，保证在任何用户的浏览器中都能正确显示。</code></pre><h3 id="CSS-Unicode字体"><a href="#CSS-Unicode字体" class="headerlink" title="CSS Unicode字体"></a>CSS Unicode字体</h3><img src="/.io//shs.png">
+
+<ul>
+<li><p>为什么使用 Unicode字体</p>
+<ul>
+<li>在 CSS 中设置字体名称，直接写中文是可以的。但是在文件编码（GB2312、UTF-8 等）不匹配时会产生乱码的错误。</li>
+<li>xp 系统不支持 类似微软雅黑的中文。</li>
+</ul>
+</li>
+<li><p>解决：</p>
+<ul>
+<li><p>方案一： 你可以使用英文来替代。 比如<code>font-family:&quot;Microsoft Yahei&quot;</code>。</p>
+</li>
+<li><p>方案二： 在 CSS 直接使用 Unicode 编码来写字体名称可以避免这些错误。使用 Unicode 写中文字体名称，浏览器是可以正确的解析的。</p>
+<pre><code>font-family: &quot;\5FAE\8F6F\96C5\9ED1&quot;;   表示设置字体为“微软雅黑”。</code></pre></li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>字体名称</th>
+<th>英文名称</th>
+<th>Unicode 编码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>宋体</td>
+<td>SimSun</td>
+<td>\5B8B\4F53</td>
+</tr>
+<tr>
+<td>新宋体</td>
+<td>NSimSun</td>
+<td>\65B0\5B8B\4F53</td>
+</tr>
+<tr>
+<td>黑体</td>
+<td>SimHei</td>
+<td>\9ED1\4F53</td>
+</tr>
+<tr>
+<td>微软雅黑</td>
+<td>Microsoft YaHei</td>
+<td>\5FAE\8F6F\96C5\9ED1</td>
+</tr>
+<tr>
+<td>楷体_GB2312</td>
+<td>KaiTi_GB2312</td>
+<td>\6977\4F53_GB2312</td>
+</tr>
+<tr>
+<td>隶书</td>
+<td>LiSu</td>
+<td>\96B6\4E66</td>
+</tr>
+<tr>
+<td>幼园</td>
+<td>YouYuan</td>
+<td>\5E7C\5706</td>
+</tr>
+<tr>
+<td>华文细黑</td>
+<td>STXihei</td>
+<td>\534E\6587\7EC6\9ED1</td>
+</tr>
+<tr>
+<td>细明体</td>
+<td>MingLiU</td>
+<td>\7EC6\660E\4F53</td>
+</tr>
+<tr>
+<td>新细明体</td>
+<td>PMingLiU</td>
+<td>\65B0\7EC6\660E\4F53</td>
+</tr>
+</tbody></table>
+<p>为了照顾不同电脑的字体安装问题，我们尽量只使用宋体和微软雅黑中文字体</p>
+<h2 id="1-3-font-weight-字体粗细"><a href="#1-3-font-weight-字体粗细" class="headerlink" title="1.3 font-weight:字体粗细"></a>1.3 font-weight:字体粗细</h2><ul>
+<li>在html中如何将字体加粗我们可以用标签来实现<ul>
+<li>使用 b  和 strong 标签是文本加粗。</li>
+</ul>
+</li>
+<li>可以使用CSS 来实现，但是CSS 是没有语义的。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td align="left">默认值（不加粗的）</td>
+</tr>
+<tr>
+<td>bold</td>
+<td align="left">定义粗体（加粗的）</td>
+</tr>
+<tr>
+<td>100~900</td>
+<td align="left">400 等同于 normal，而 700 等同于 bold  我们重点记住这句话</td>
+</tr>
+</tbody></table>
+<p>提倡：</p>
+<p>  我们平时更喜欢用数字来表示加粗和不加粗。</p>
+<h2 id="1-4-font-style-字体风格"><a href="#1-4-font-style-字体风格" class="headerlink" title="1.4 font-style:字体风格"></a>1.4 font-style:字体风格</h2><ul>
+<li>在html中如何将字体倾斜我们可以用标签来实现<ul>
+<li>字体倾斜除了用 i  和 em 标签，</li>
+</ul>
+</li>
+<li>可以使用CSS 来实现，但是CSS 是没有语义的</li>
+</ul>
+<p>font-style属性用于定义字体风格，如设置斜体、倾斜或正常字体，其可用属性值如下：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td align="left">默认值，浏览器会显示标准的字体样式  font-style: normal;</td>
+</tr>
+<tr>
+<td>italic</td>
+<td align="left">浏览器会显示斜体的字体样式。</td>
+</tr>
+</tbody></table>
+<p><img src="/.io//good.png">小技巧： </p>
+<pre><code>平时我们很少给文字加斜体，反而喜欢给斜体标签（em，i）改为普通模式。</code></pre><h2 id="1-5-font-综合设置字体样式-重点"><a href="#1-5-font-综合设置字体样式-重点" class="headerlink" title="1.5 font:综合设置字体样式 (重点)"></a>1.5 font:综合设置字体样式 (重点)</h2><p>font属性用于对字体样式进行综合设置</p>
+<ul>
+<li>基本语法格式如下：</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector">选择器 </span><span class="token punctuation">{</span> <span class="token property">font</span><span class="token punctuation">:</span> font-style  font-weight  font-size/line-height  font-family<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre>
+<ul>
+<li>注意：<ul>
+<li>使用font属性时，必须按上面语法格式中的顺序书写，不能更换顺序，各个属性以<strong>空格</strong>隔开。</li>
+<li>其中不需要设置的属性可以省略（取默认值），但必须保留font-size和font-family属性，否则font属性将不起作用。</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-6-font总结"><a href="#1-6-font总结" class="headerlink" title="1.6 font总结"></a>1.6 font总结</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">表示</th>
+<th align="left">注意点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">font-size</td>
+<td align="left">字号</td>
+<td align="left">我们通常用的单位是px 像素，一定要跟上单位</td>
+</tr>
+<tr>
+<td align="left">font-family</td>
+<td align="left">字体</td>
+<td align="left">实际工作中按照团队约定来写字体</td>
+</tr>
+<tr>
+<td align="left">font-weight</td>
+<td align="left">字体粗细</td>
+<td align="left">记住加粗是 700 或者 bold  不加粗 是 normal 或者  400  记住数字不要跟单位</td>
+</tr>
+<tr>
+<td align="left">font-style</td>
+<td align="left">字体样式</td>
+<td align="left">记住倾斜是 italic     不倾斜 是 normal  工作中我们最常用 normal</td>
+</tr>
+<tr>
+<td align="left">font</td>
+<td align="left">字体连写</td>
+<td align="left">1. 字体连写是有顺序的  不能随意换位置 2. 其中字号 和 字体 必须同时出现</td>
+</tr>
+</tbody></table>
+<h1 id="2-CSS外观属性"><a href="#2-CSS外观属性" class="headerlink" title="2. CSS外观属性"></a>2. CSS外观属性</h1><h2 id="2-1-color-文本颜色"><a href="#2-1-color-文本颜色" class="headerlink" title="2.1 color:文本颜色"></a>2.1 color:文本颜色</h2><ul>
+<li><p>作用：</p>
+<p>color属性用于定义文本的颜色，</p>
+</li>
+<li><p>其取值方式有如下3种：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">表示表示</th>
+<th align="left">属性值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">预定义的颜色值</td>
+<td align="left">red，green，blue，还有我们的御用色 pink</td>
+</tr>
+<tr>
+<td align="left">十六进制</td>
+<td align="left">#FF0000，#FF6600，#29D794</td>
+</tr>
+<tr>
+<td align="left">RGB代码</td>
+<td align="left">rgb(255,0,0)或rgb(100%,0%,0%)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>注意</p>
+<p>我们实际工作中， 用 16进制的写法是最多的，而且我们更喜欢简写方式比如  #f00 代表红色</p>
+</li>
+</ul>
+<h2 id="2-2-text-align-文本水平对齐方式"><a href="#2-2-text-align-文本水平对齐方式" class="headerlink" title="2.2 text-align:文本水平对齐方式"></a>2.2 text-align:文本水平对齐方式</h2><ul>
+<li><p>作用：</p>
+<p>text-align属性用于设置文本内容的水平对齐，相当于html中的align对齐属性</p>
+</li>
+<li><p>其可用属性值如下：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th align="center">解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>left</td>
+<td align="center">左对齐（默认值）</td>
+</tr>
+<tr>
+<td>right</td>
+<td align="center">右对齐</td>
+</tr>
+<tr>
+<td>center</td>
+<td align="center">居中对齐</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>注意：</p>
+<p>是让盒子里面的内容水平居中， 而不是让盒子居中对齐</p>
+</li>
+</ul>
+<h2 id="2-3-line-height-行间距"><a href="#2-3-line-height-行间距" class="headerlink" title="2.3 line-height:行间距"></a>2.3 line-height:行间距</h2><ul>
+<li><p>作用：</p>
+<p>line-height属性用于设置行间距，就是行与行之间的距离，即字符的垂直间距，一般称为行高。</p>
+</li>
+<li><p>单位：</p>
+<ul>
+<li>line-height常用的属性值单位有三种，分别为像素px，相对值em和百分比%，实际工作中使用最多的是像素px</li>
+</ul>
+</li>
+<li><p>技巧：</p>
+</li>
+</ul>
+<pre><code>一般情况下，行距比字号大7.8像素左右就可以了。
+line-height: 24px;</code></pre><h2 id="2-4-text-indent-首行缩进"><a href="#2-4-text-indent-首行缩进" class="headerlink" title="2.4 text-indent:首行缩进"></a>2.4 text-indent:首行缩进</h2><ul>
+<li><p>作用：</p>
+<p>text-indent属性用于设置首行文本的缩进，</p>
+</li>
+<li><p>属性值</p>
+<ul>
+<li>其属性值可为不同单位的数值、em字符宽度的倍数、或相对于浏览器窗口宽度的百分比%，允许使用负值,</li>
+<li>建议使用em作为设置单位。</li>
+</ul>
+</li>
+</ul>
+<p><strong>1em 就是一个字的宽度   如果是汉字的段落， 1em 就是一个汉字的宽度</strong></p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">p </span><span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">/*行间距*/</span>
+      <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">25</span>px<span class="token punctuation">;</span>
+      <span class="token comment" spellcheck="true">/*首行缩进2个字  em  1个em 就是1个字的大小*/</span>
+      <span class="token property">text-indent</span><span class="token punctuation">:</span> <span class="token number">2</span>em<span class="token punctuation">;</span>  
+ <span class="token punctuation">}</span></code></pre>
+<h2 id="2-5-text-decoration-文本的装饰"><a href="#2-5-text-decoration-文本的装饰" class="headerlink" title="2.5 text-decoration 文本的装饰"></a>2.5 text-decoration 文本的装饰</h2><p>text-decoration   通常我们用于给链接修改装饰效果</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>默认。定义标准的文本。 取消下划线（最常用）</td>
+</tr>
+<tr>
+<td>underline</td>
+<td>定义文本下的一条线。下划线 也是我们链接自带的（常用）</td>
+</tr>
+<tr>
+<td>overline</td>
+<td>定义文本上的一条线。（不用）</td>
+</tr>
+<tr>
+<td>line-through</td>
+<td>定义穿过文本下的一条线。（不常用）</td>
+</tr>
+</tbody></table>
+<h2 id="2-6-CSS外观属性总结"><a href="#2-6-CSS外观属性总结" class="headerlink" title="2.6 CSS外观属性总结"></a>2.6 CSS外观属性总结</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">表示</th>
+<th align="left">注意点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">color</td>
+<td align="left">颜色</td>
+<td align="left">我们通常用  十六进制   比如 而且是简写形式 #fff</td>
+</tr>
+<tr>
+<td align="left">line-height</td>
+<td align="left">行高</td>
+<td align="left">控制行与行之间的距离</td>
+</tr>
+<tr>
+<td align="left">text-align</td>
+<td align="left">水平对齐</td>
+<td align="left">可以设定文字水平的对齐方式</td>
+</tr>
+<tr>
+<td align="left">text-indent</td>
+<td align="left">首行缩进</td>
+<td align="left">通常我们用于段落首行缩进2个字的距离   text-indent: 2em;</td>
+</tr>
+<tr>
+<td align="left">text-decoration</td>
+<td align="left">文本修饰</td>
+<td align="left">记住 添加 下划线  underline  取消下划线  none</td>
+</tr>
+</tbody></table>
+<h1 id="3-开发者工具（chrome）"><a href="#3-开发者工具（chrome）" class="headerlink" title="3.开发者工具（chrome）"></a>3.开发者工具（chrome）</h1><p><strong>此工具是我们的必备工具，以后代码出了问题</strong></p>
+<p><strong>我们首先第一反应就是：</strong></p>
+<ul>
+<li>“按F12”或者是 “shift+ctrl+i”   打开 开发者工具。</li>
+<li>菜单：   右击网页空白出—检查</li>
+</ul>
+<img src="/.io//11开发人员工具.jpg">
+
+<ul>
+<li>通过开发人员工具小指针工具，查找页面元素</li>
+<li>左侧是html页面结构，右侧是css样式</li>
+</ul>
+<p><img src="/.io//good.png">小技巧：</p>
+<ol>
+<li>ctrl+滚轮 可以 放大开发者工具代码大小。</li>
+<li>左边是HTML元素结构   右边是CSS样式。</li>
+<li>右边CSS样式可以改动数值和颜色查看更改后效果。</li>
+<li>ctrl + 0  复原浏览器大小</li>
+</ol>
+<h1 id="4-sublime快捷操作emmet语法"><a href="#4-sublime快捷操作emmet语法" class="headerlink" title="4. sublime快捷操作emmet语法"></a>4. sublime快捷操作emmet语法</h1><p>Emmet的前身是Zen coding,它使用缩写,来提高html/css的编写速度。</p>
+<ol>
+<li><p>生成标签 直接输入标签名 按tab键即可   比如  div   然后tab 键， 就可以生成 <div></div></p>
+</li>
+<li><p>如果想要生成多个相同标签  加上 * 就可以了 比如   div*3  就可以快速生成3个div</p>
+</li>
+<li><p>如果有父子级关系的标签，可以用 &gt;  比如   ul &gt; li就可以了</p>
+</li>
+<li><p>如果有兄弟关系的标签，用  +  就可以了 比如 div+p  </p>
+</li>
+<li><p>如果生成带有类名或者id名字的，  直接写  .demo  或者  #two   tab 键就可以了</p>
+</li>
+<li><p>如果生成的div 类名是有顺序的， 可以用 自增符号  $     </p>
+<pre><code>.demo$*3        
+&lt;div class=&quot;demo1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;demo2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;demo3&quot;&gt;&lt;/div&gt;</code></pre></li>
+</ol>
+<h1 id="5-综合案例"><a href="#5-综合案例" class="headerlink" title="5. 综合案例"></a>5. 综合案例</h1><img src="/.io//css1.png">
+
+<h1 id="6-今日总结"><a href="#6-今日总结" class="headerlink" title="6. 今日总结"></a>6. 今日总结</h1><img src="/.io//zong1.jpg">
+
+<h1 id="7-拓展阅读"><a href="#7-拓展阅读" class="headerlink" title="7. 拓展阅读@"></a>7. 拓展阅读@</h1><p><a href="https://www.w3cplus.com/tools/emmet-cheat-sheet.html" target="_blank" rel="noopener">emment语法</a></p>
 
             </div>
             <hr/>
@@ -561,7 +975,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://guozhenqi.github.io/2020/07/19/hello-world/">https://guozhenqi.github.io/2020/07/19/hello-world/</a>
+                    <a href="https://guozhenqi.github.io/2020/07/20/css/03-CSS%E6%96%87%E5%AD%97%E6%96%87%E6%9C%AC%E6%A0%B7%E5%BC%8F/">https://guozhenqi.github.io/2020/07/20/css/03-CSS%E6%96%87%E5%AD%97%E6%96%87%E6%9C%AC%E6%A0%B7%E5%BC%8F/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -768,65 +1182,55 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/19/%E6%97%B6%E6%80%81%E5%92%8C%E8%AF%AD%E6%80%81/">
+                <a href="/2020/07/20/css/04-CSS/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="时态和语态">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="css/04-CSS">
                         
-                        <span class="card-title">时态和语态</span>
+                        <span class="card-title">css/04-CSS</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            时态和语态动词时态
+                            
+第01阶段.前端基础
+
+CSS 第二天今天我们围绕一个 导航栏案例进行学习知识点。
+今日重点：
+
+复合选择器
+后代选择器
+并集选择器
+
+
+标签显示模式
+CSS背景
+背景位置
+
+
+CSS三大特性
+优先级
 
 
 
-现在
-过去
-将来
-过去将来
 
 
-
-一般
-ask/asks
-asked
-shall/will ask
-should/would ask
-
-
-进行
-am/is/are
-was/were asking
-shall/wil
+1. CSS复合选择器 目
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%8B%B1%E8%AF%AD/" class="post-category">
-                                    英语
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            gzq
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">英语学习</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -835,27 +1239,44 @@ shall/wil
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/19/hello-world/">
+                <a href="/2020/07/20/css/02-CSS%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="css/02-CSS基础选择器">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">css/02-CSS基础选择器</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            
+第01阶段.前端基础.CSS基础选择器
+
+CSS选择器（重点） 学习目标：
+
+理解
+能说出选择器的作用
+id选择器和类选择器的区别
+
+
+应用
+能够使用基础选择器给页面元素添加样式
+
+
+
+1. CSS选择器作用（重点）
+
+如上图所以，要把里
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                             </span>
                         <span class="publish-author">
                             
@@ -865,7 +1286,6 @@ shall/wil
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

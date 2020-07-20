@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, null">
+    <meta name="keywords" content="js基础/JavaScript基础第04天笔记, null">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | null</title>
+    <title>js基础/JavaScript基础第04天笔记 | null</title>
     <link rel="icon" type="image/png" href="/lll.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -377,12 +377,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">js基础/JavaScript基础第04天笔记</h1>
                 </div>
             </div>
         </div>
@@ -511,7 +511,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-19
+                    2020-07-20
                 </div>
                 
 
@@ -527,15 +527,198 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h1 id="JavaScript基础第04天笔记"><a href="#JavaScript基础第04天笔记" class="headerlink" title="JavaScript基础第04天笔记"></a>JavaScript基础第04天笔记</h1><h2 id="1-数组"><a href="#1-数组" class="headerlink" title="1 - 数组"></a>1 - 数组</h2><h3 id="1-1-数组的概念"><a href="#1-1-数组的概念" class="headerlink" title="1.1 数组的概念"></a>1.1 数组的概念</h3><ul>
+<li>数组可以把一组相关的数据一起存放，并提供方便的访问(获取）方式。</li>
+<li>数组是指<strong>一组数据的集合</strong>，其中的每个数据被称作<strong>元素</strong>，在数组中可以<strong>存放任意类型的元素</strong>。数组是一种将一组数据存储在单个变量名下的优雅方式。</li>
+</ul>
+<h3 id="1-2-创建数组"><a href="#1-2-创建数组" class="headerlink" title="1.2 创建数组"></a>1.2 创建数组</h3><p>JS 中创建数组有两种方式：</p>
+<ul>
+<li><p>利用  new 创建数组  </p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> 数组名 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ；
+<span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">// 创建一个新的空数组</span></code></pre>
+<p>注意 Array () ，A 要大写    </p>
+</li>
+<li><p>利用数组字面量创建数组</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">//1. 使用数组字面量方式创建空的数组</span>
+<span class="token keyword">var</span>  数组名 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>；
+<span class="token comment" spellcheck="true">//2. 使用数组字面量方式创建带初始值的数组</span>
+<span class="token keyword">var</span>  数组名 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'小白'</span><span class="token punctuation">,</span><span class="token string">'小黑'</span><span class="token punctuation">,</span><span class="token string">'大黄'</span><span class="token punctuation">,</span><span class="token string">'瑞奇'</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li>数组的字面量是方括号 [ ] </li>
+<li>声明数组并赋值称为数组的初始化</li>
+<li>这种字面量方式也是我们以后最多使用的方式</li>
+</ul>
+</li>
+<li><p>数组元素的类型</p>
+<p>数组中可以存放任意类型的数据，例如字符串，数字，布尔值等。</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> arrStus <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'小白'</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">,</span><span class="token number">28.9</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+<h3 id="1-3-获取数组中的元素"><a href="#1-3-获取数组中的元素" class="headerlink" title="1.3 获取数组中的元素"></a>1.3 获取数组中的元素</h3><p>​        索引 (下标) ：用来访问数组元素的序号（数组下标从 0 开始）。</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%871.png" alt></p>
+<p>​        数组可以通过索引来访问、设置、修改对应的数组元素，可以通过“数组名[索引]”的形式来获取数组中的元素。</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 定义数组</span>
+<span class="token keyword">var</span> arrStus <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 获取数组中的第2个元素</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>arrStus<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    </code></pre>
+<p>注意：如果访问时数组没有和索引值对应的元素，则得到的值是undefined</p>
+<h3 id="1-4-遍历数组"><a href="#1-4-遍历数组" class="headerlink" title="1.4 遍历数组"></a>1.4 遍历数组</h3><ul>
+<li><p>数组遍历</p>
+<p>  ​        把数组中的每个元素从头到尾都访问一次（类似学生的点名），可以通过 for 循环索引遍历数组中的每一项</p>
+</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'red'</span><span class="token punctuation">,</span><span class="token string">'green'</span><span class="token punctuation">,</span> <span class="token string">'blue'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arrStus<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li><p>数组的长度</p>
+<p>数组的长度：默认情况下表示数组中元素的个数</p>
+<p>使用“数组名.length”可以访问数组元素的数量（数组长度）。</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> arrStus <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>arrStus<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 3</span></code></pre>
+<p>  <strong>注意</strong>：</p>
+<ul>
+<li>此处数组的长度是数组元素的个数 ，不要和数组的索引号混淆。</li>
+</ul>
+</li>
+<li><p>当我们数组里面的元素个数发生了变化，这个 length 属性跟着一起变化</p>
+<ul>
+<li>数组的length属性可以被修改：</li>
+</ul>
+</li>
+<li><p>如果设置的length属性值大于数组的元素个数，则会在数组末尾出现空白元素；</p>
+<ul>
+<li>如果设置的length属性值小于数组的元素个数，则会把超过该值的数组元素删除</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-5-数组中新增元素"><a href="#1-5-数组中新增元素" class="headerlink" title="1.5 数组中新增元素"></a>1.5 数组中新增元素</h3><p>​        数组中可以通过以下方式在数组的末尾插入新元素：</p>
+<pre class=" language-js"><code class="language-js">  数组<span class="token punctuation">[</span> 数组<span class="token punctuation">.</span>length <span class="token punctuation">]</span> <span class="token operator">=</span> 新数据<span class="token punctuation">;</span></code></pre>
+<h2 id="2-函数"><a href="#2-函数" class="headerlink" title="2 - 函数"></a>2 - 函数</h2><h3 id="2-1-函数的概念"><a href="#2-1-函数的概念" class="headerlink" title="2.1 函数的概念"></a>2.1 函数的概念</h3><p>​        在 JS 里面，可能会定义非常多的相同代码或者功能相似的代码，这些代码可能需要大量重复使用。虽然 for循环语句也能实现一些简单的重复操作，但是比较具有局限性，此时我们就可以使用 JS 中的函数。</p>
+<p>​        函数：就是<strong>封装了一段可被重复调用执行的代码块</strong>。通过此代码块可以<strong>实现大量代码的重复使用</strong>。  </p>
+<h3 id="2-2-函数的使用"><a href="#2-2-函数的使用" class="headerlink" title="2.2 函数的使用"></a>2.2 函数的使用</h3><h4 id="声明函数"><a href="#声明函数" class="headerlink" title="声明函数"></a>声明函数</h4><pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 声明函数</span>
+<span class="token keyword">function</span> <span class="token function">函数名</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//函数体代码</span>
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li><p>function 是声明函数的关键字,必须小写</p>
+</li>
+<li><p>由于函数一般是为了实现某个功能才定义的， 所以通常我们将函数名命名为动词，比如 getSum</p>
+</li>
+</ul>
+<h4 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h4><pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 调用函数</span>
+<span class="token function">函数名</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 通过调用函数名来执行函数体代码</span></code></pre>
+<ul>
+<li><p>调用的时候千万不要忘记添加小括号</p>
+</li>
+<li><p>口诀：函数不调用，自己不执行</p>
+<p>注意：声明函数本身并不会执行代码，只有调用函数时才会执行函数体代码。</p>
+</li>
+</ul>
+<h4 id="函数的封装"><a href="#函数的封装" class="headerlink" title="函数的封装"></a>函数的封装</h4><ul>
+<li><p>函数的封装是把一个或者多个功能通过函数的方式封装起来，对外只提供一个简单的函数接口</p>
+</li>
+<li><p>简单理解：封装类似于将电脑配件整合组装到机箱中 ( 类似快递打包）  </p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%872.png" alt></p>
+<p>例子：封装计算1-100累加和</p>
+<pre class=" language-js"><code class="language-js">
+<span class="token comment" spellcheck="true">/* 
+   计算1-100之间值的函数
+*/</span>
+<span class="token comment" spellcheck="true">// 声明函数</span>
+<span class="token keyword">function</span> <span class="token function">getSum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">var</span> sumNum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 准备一个变量，保存数字和</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    sumNum <span class="token operator">+</span><span class="token operator">=</span> i<span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 把每个数值 都累加 到变量中</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span>sumNum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// 调用函数</span>
+<span class="token function">getSum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+<h3 id="2-3-函数的参数"><a href="#2-3-函数的参数" class="headerlink" title="2.3 函数的参数"></a>2.3 函数的参数</h3><h4 id="函数参数语法"><a href="#函数参数语法" class="headerlink" title="函数参数语法"></a>函数参数语法</h4><ul>
+<li><p>形参：函数定义时设置接收调用时传入</p>
+</li>
+<li><p>实参：函数调用时传入小括号内的真实数据</p>
+<p><img src="/.io//images%5C%E5%9B%BE%E7%89%873.png" alt></p>
+<p>​    参数的作用 : 在函数内部某些值不能固定，我们可以通过参数在调用函数时传递不同的值进去。</p>
+<p>函数参数的运用：</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 带参数的函数声明</span>
+<span class="token keyword">function</span> <span class="token function">函数名</span><span class="token punctuation">(</span>形参<span class="token number">1</span><span class="token punctuation">,</span> 形参<span class="token number">2</span> <span class="token punctuation">,</span> 形参<span class="token number">3</span><span class="token operator">...</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 可以定义任意多的参数，用逗号分隔</span>
+  <span class="token comment" spellcheck="true">// 函数体</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// 带参数的函数调用</span>
+<span class="token function">函数名</span><span class="token punctuation">(</span>实参<span class="token number">1</span><span class="token punctuation">,</span> 实参<span class="token number">2</span><span class="token punctuation">,</span> 实参<span class="token number">3</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span> </code></pre>
+<ol>
+<li>调用的时候实参值是传递给形参的</li>
+<li>形参简单理解为：不用声明的变量</li>
+<li>实参和形参的多个参数之间用逗号（,）分隔</li>
+</ol>
+</li>
+</ul>
+<h4 id="函数形参和实参数量不匹配时"><a href="#函数形参和实参数量不匹配时" class="headerlink" title="函数形参和实参数量不匹配时"></a>函数形参和实参数量不匹配时</h4><p><img src="/.io//images%5C%E5%9B%BE%E7%89%874.png" alt></p>
+<pre><code>注意：在JavaScript中，形参的默认值是undefined。</code></pre><p>小结：</p>
+<ul>
+<li>函数可以带参数也可以不带参数</li>
+<li>声明函数的时候，函数名括号里面的是形参，形参的默认值为 undefined</li>
+<li>调用函数的时候，函数名括号里面的是实参</li>
+<li>多个参数中间用逗号分隔</li>
+<li>形参的个数可以和实参个数不匹配，但是结果不可预计，我们尽量要匹配</li>
+</ul>
+<h3 id="2-4-函数的返回值"><a href="#2-4-函数的返回值" class="headerlink" title="2.4 函数的返回值"></a>2.4 函数的返回值</h3><h4 id="return-语句"><a href="#return-语句" class="headerlink" title="return 语句"></a>return 语句</h4><pre><code>返回值：函数调用整体代表的数据；函数执行完成后可以通过return语句将指定数据返回 。</code></pre><pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 声明函数</span>
+<span class="token keyword">function</span> 函数名（）<span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+    <span class="token keyword">return</span>  需要返回的值；
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// 调用函数</span>
+<span class="token function">函数名</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">// 此时调用函数就可以得到函数体内return 后面的值</span></code></pre>
+<ul>
+<li>在使用 return 语句时，函数会停止执行，并返回指定的值</li>
+<li>如果函数没有 return ，返回的值是 undefined</li>
+</ul>
+<h4 id="break-continue-return-的区别"><a href="#break-continue-return-的区别" class="headerlink" title="break ,continue ,return 的区别"></a>break ,continue ,return 的区别</h4><ul>
+<li>break ：结束当前的循环体（如 for、while）</li>
+<li>continue ：跳出本次循环，继续执行下次循环（如 for、while）</li>
+<li>return ：不仅可以退出循环，还能够返回 return 语句中的值，同时还可以结束当前的函数体内的代码</li>
+</ul>
+<h3 id="2-5-arguments的使用"><a href="#2-5-arguments的使用" class="headerlink" title="2.5 arguments的使用"></a>2.5 arguments的使用</h3><p>​        当不确定有多少个参数传递的时候，可以用 arguments 来获取。JavaScript 中，arguments实际上它是当前函数的一个内置对象。所有函数都内置了一个 arguments 对象，arguments 对象中存储了传递的所有实参。arguments展示形式是一个伪数组，因此可以进行遍历。伪数组具有以下特点：</p>
+<ul>
+<li><p>具有 length 属性</p>
+</li>
+<li><p>按索引方式储存数据</p>
+</li>
+<li><p>不具有数组的 push , pop 等方法</p>
+<p>注意：在函数内部使用该对象，用此对象获取函数调用时传的实参。</p>
+</li>
+</ul>
+<h3 id="2-6-函数案例"><a href="#2-6-函数案例" class="headerlink" title="2.6 函数案例"></a>2.6 函数案例</h3><pre><code>    函数内部可以调用另一个函数，在同一作用域代码中，函数名即代表封装的操作，使用函数名加括号即可以将封装的操作执行。</code></pre><h3 id="2-7-函数的两种声明方式"><a href="#2-7-函数的两种声明方式" class="headerlink" title="2.7 函数的两种声明方式"></a>2.7 函数的两种声明方式</h3><ul>
+<li><p>自定义函数方式(命名函数)</p>
+<p>利用函数关键字 function 自定义函数方式</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 声明定义方式</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// 调用  </span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  </code></pre>
+<ul>
+<li>因为有名字，所以也被称为命名函数</li>
+<li>调用函数的代码既可以放到声明函数的前面，也可以放在声明函数的后面</li>
+</ul>
+</li>
+<li><p>函数表达式方式(匿名函数）</p>
+<p>利用函数表达式方式的写法如下： </p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 这是函数表达式写法，匿名函数后面跟分号结束</span>
+<span class="token keyword">var</span> fn <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span>；
+<span class="token comment" spellcheck="true">// 调用的方式，函数调用必须写到函数体下面</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li>因为函数没有名字，所以也被称为匿名函数</li>
+<li>这个fn 里面存储的是一个函数  </li>
+<li>函数表达式方式原理跟声明变量方式是一致的</li>
+<li>函数调用的代码必须写到函数体后面</li>
+</ul>
+</li>
+</ul>
 
             </div>
             <hr/>
@@ -561,7 +744,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://guozhenqi.github.io/2020/07/19/hello-world/">https://guozhenqi.github.io/2020/07/19/hello-world/</a>
+                    <a href="https://guozhenqi.github.io/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC04%E5%A4%A9%E7%AC%94%E8%AE%B0/">https://guozhenqi.github.io/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC04%E5%A4%A9%E7%AC%94%E8%AE%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -768,65 +951,32 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/19/%E6%97%B6%E6%80%81%E5%92%8C%E8%AF%AD%E6%80%81/">
+                <a href="/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC05%E5%A4%A9%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="时态和语态">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="js基础/JavaScript基础第05天笔记">
                         
-                        <span class="card-title">时态和语态</span>
+                        <span class="card-title">js基础/JavaScript基础第05天笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            时态和语态动词时态
-
-
-
-现在
-过去
-将来
-过去将来
-
-
-
-一般
-ask/asks
-asked
-shall/will ask
-should/would ask
-
-
-进行
-am/is/are
-was/were asking
-shall/wil
+                            JavaScript基础第05天笔记1 - 作用域1.1 作用域概述通常来说，一段程序代码中所用到的名字并不总是有效和可用的，而限定这个名字的可用性的代码范围就是这个名字的作用域。作用域的使用提高了程序逻辑的局部性，增强了程序的可靠性，减少
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%8B%B1%E8%AF%AD/" class="post-category">
-                                    英语
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            gzq
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">英语学习</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -835,27 +985,41 @@ shall/wil
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/19/hello-world/">
+                <a href="/2020/07/20/js%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%80%E7%AC%AC03%E5%A4%A9%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="js基础/JavaScript基础第03天笔记">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">js基础/JavaScript基础第03天笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            JavaScript基础第03天笔记1 - 循环1.1 for循环
+语法结构
+for(初始化变量; 条件表达式; 操作表达式 ){
+    //循环体
+}
+
+
+
+名称
+作用
+
+
+
+初始化变量
+通常被用于初始化一个计数器，该表达式可以使用 v
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                             </span>
                         <span class="publish-author">
                             
@@ -865,7 +1029,6 @@ shall/wil
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
