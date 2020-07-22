@@ -617,12 +617,12 @@
 </tr>
 </thead>
 <tbody><tr>
-<td></td>
+<td><html></html></td>
 <td align="center">HTML标签</td>
 <td align="left">页面中最大的标签，我们成为  根标签</td>
 </tr>
 <tr>
-<td><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></td>
+<td><head><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head></td>
 <td align="center">文档的头部</td>
 <td align="left">注意在head标签中我们必须要设置的标签是title</td>
 </tr>
@@ -632,7 +632,7 @@
 <td align="left">让页面拥有一个属于自己的网页标题</td>
 </tr>
 <tr>
-<td></td>
+<td><body></body></td>
 <td align="center">文档的主体</td>
 <td align="left">元素包含文档的所有内容，页面内容 基本都是放到body里面的</td>
 </tr>
@@ -716,30 +716,45 @@
 </blockquote>
 <h2 id="1-4-课堂一练"><a href="#1-4-课堂一练" class="headerlink" title="1.4 课堂一练"></a>1.4 课堂一练</h2><p>*<em>请问下列哪组标签关系是错误的？ *</em></p>
 <ul>
-<li><input disabled="" type="checkbox">  <meta name="generator" content="Hexo 4.2.1"> 
+<li><input disabled type="checkbox"> <head> <meta name="generator" content="Hexo 4.2.1"></head><body> </body>
 
 
 </li>
 </ul>
 <ul>
-<li><input disabled="" type="checkbox"> <div> <strong></strong> </div>
+<li><input disabled type="checkbox"> <div> <strong></strong> </div>
 
 
 </li>
 </ul>
 <ul>
-<li><input checked="" disabled="" type="checkbox">  <title></title> 
+<li><input checked disabled type="checkbox"> <head> <title></title></head> 
 
 
 </li>
 </ul>
 <ul>
-<li><input disabled="" type="checkbox">  <div></div> <script>
+<li><input disabled type="checkbox"> <body> <div></div> <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 
 
@@ -778,12 +793,12 @@
 </ul>
 </li>
 </ul>
-<h1 id="3-文档类型-lt-DOCTYPE-gt"><a href="#3-文档类型-lt-DOCTYPE-gt" class="headerlink" title="3. 文档类型<!DOCTYPE>"></a>3. 文档类型&lt;!DOCTYPE&gt;</h1><p><strong>用法：</strong></p>
+<h1 id="3-文档类型-lt-DOCTYPE-gt"><a href="#3-文档类型-lt-DOCTYPE-gt" class="headerlink" title="3. 文档类型&lt;!DOCTYPE&gt;"></a>3. 文档类型&lt;!DOCTYPE&gt;</h1><p><strong>用法：</strong></p>
 <pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span> </code></pre>
 <p><strong>作用：</strong></p>
-<p> 声明位于文档中的最前面的位置，处于  标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。</p>
+<!DOCTYPE><p> 声明位于文档中的最前面的位置，处于 <html> 标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。</html></p>
 <p><strong>一句话说出他们:</strong></p>
-   <p>  就是告诉浏览器按照HTML5 规范解析页面.</p>
+   <!DOCTYPE html><p>  就是告诉浏览器按照HTML5 规范解析页面.</p>
 <p><strong>团队约定：</strong></p>
 <blockquote>
 <pre><code>HTML文件必须加上 DOCTYPE 声明，并统一使用 HTML5 的文档声明</code></pre></blockquote>
@@ -795,8 +810,8 @@
 </ol>
 <p><strong>一句话说出他们:</strong></p>
 <blockquote>
-   指定该html标签 内容 所用的语言为中文
-</blockquote>
+ <html lang="zh-CN">  指定该html标签 内容 所用的语言为中文
+</html></blockquote>
 <p><strong>团队约定：</strong></p>
 <blockquote>
 <pre><code>考虑浏览器和操作系统的兼容性，目前仍然使用 zh-CN 属性值</code></pre></blockquote>
@@ -826,7 +841,7 @@
 </blockquote>
 <p><strong>团队约定：</strong></p>
 <blockquote>
-<pre><code>一般情况下统一使用 "UTF-8" 编码, 请尽量统一写成标准的 "UTF-8"，不要写成 "utf-8" 或 "utf8" 或 "UTF8"。</code></pre></blockquote>
+<pre><code>一般情况下统一使用 &quot;UTF-8&quot; 编码, 请尽量统一写成标准的 &quot;UTF-8&quot;，不要写成 &quot;utf-8&quot; 或 &quot;utf8&quot; 或 &quot;UTF8&quot;。</code></pre></blockquote>
 <h1 id="6-HTML标签的语义化"><a href="#6-HTML标签的语义化" class="headerlink" title="6. HTML标签的语义化"></a>6. HTML标签的语义化</h1><p>白话： 所谓标签语义化，就是指标签的含义。</p>
 <p><strong>一句话说出语义化目的:</strong></p>
 <blockquote>
@@ -843,25 +858,7 @@
 
 <p>语义是否良好： 当我们去掉CSS之后，网页结构依然组织有序，并且有良好的可读性。(  裸奔起来一样好看 )</p>
 <p>遵循的原则：先确定语义的HTML ，再选合适的CSS。所以，<strong>我们接下来学习html标签，要根据语义去记忆。</strong> HTML网页中任何元素的实现都要依靠HTML标签。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
             </div>
             <hr/>
 
@@ -1445,7 +1442,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">66.9k</span>&nbsp;字
+                class="white-color">65.6k</span>&nbsp;字
             
             
             

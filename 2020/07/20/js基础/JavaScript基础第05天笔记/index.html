@@ -542,7 +542,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3k
+                    2.9k
                 </div>
                 
 
@@ -668,7 +668,7 @@ system<span class="token punctuation">.</span>out<span class="token punctuation"
 <span class="token keyword">var</span>  fn <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'想不到吧'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
-<pre><code>结果：报错提示 ”fn is not a function"
+<pre><code>结果：报错提示 ”fn is not a function&quot;
 
 解释：该段代码执行之前，会做变量声明提升，fn在提升之后的值是undefined；而fn调用是在fn被赋值为函数体之前，此时fn的值是undefined，所以无法正确调用</code></pre><h2 id="5-对象"><a href="#5-对象" class="headerlink" title="5 - 对象"></a>5 - 对象</h2><h3 id="5-1-对象的相关概念"><a href="#5-1-对象的相关概念" class="headerlink" title="5.1 对象的相关概念"></a>5.1 对象的相关概念</h3><ul>
 <li><p>什么是对象？</p>
@@ -686,7 +686,7 @@ system<span class="token punctuation">.</span>out<span class="token punctuation"
 
 如果要保存一个人的完整信息呢？
 
-例如，将“张三疯”的个人的信息保存在数组中的方式为：</code></pre><pre><code>var arr = [‘张三疯’, ‘男', 128,154];</code></pre><pre><code>上述例子中用数组保存数据的缺点是：数据只能通过索引值访问，开发者需要清晰的清除所有的数据的排行才能准确地获取数据，而当数据量庞大时，不可能做到记忆所有数据的索引值。
+例如，将“张三疯”的个人的信息保存在数组中的方式为：</code></pre><pre><code>var arr = [‘张三疯’, ‘男&#39;, 128,154];</code></pre><pre><code>上述例子中用数组保存数据的缺点是：数据只能通过索引值访问，开发者需要清晰的清除所有的数据的排行才能准确地获取数据，而当数据量庞大时，不可能做到记忆所有数据的索引值。
 
 为了让更好地存储一组数据，对象应运而生：对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显，方便开发者使用。
 
@@ -838,25 +838,7 @@ andy<span class="token punctuation">.</span>sayHi <span class="token operator">=
 <span class="token punctuation">}</span></code></pre>
 </li>
 </ul>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
             </div>
             <hr/>
 
@@ -1424,7 +1406,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">66.9k</span>&nbsp;字
+                class="white-color">65.6k</span>&nbsp;字
             
             
             

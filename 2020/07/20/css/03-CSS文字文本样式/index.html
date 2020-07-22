@@ -595,16 +595,16 @@
 <p>font-family属性用于设置哪一种字体。</p>
 </li>
 </ul>
-<pre><code>p{ font-family:"微软雅黑";}</code></pre><ul>
+<pre><code>p{ font-family:&quot;微软雅黑&quot;;}</code></pre><ul>
 <li>网页中常用的字体有宋体、微软雅黑、黑体等，例如将网页中所有段落文本的字体设置为微软雅黑</li>
 <li>可以同时指定多个字体，中间以逗号隔开，表示如果浏览器不支持第一个字体，则会尝试下一个，直到找到合适的字体， 如果都没有，则以我们电脑默认的字体为准。</li>
 </ul>
-<pre><code>p{font-family: Arial,"Microsoft Yahei", "微软雅黑";}</code></pre><blockquote>
+<pre><code>p{font-family: Arial,&quot;Microsoft Yahei&quot;, &quot;微软雅黑&quot;;}</code></pre><blockquote>
 <p>常用技巧：</p>
 </blockquote>
 <pre><code>1. 各种字体之间必须使用英文状态下的逗号隔开。
 2. 中文字体需要加英文状态下的引号，英文字体一般不需要加引号。当需要设置英文字体时，英文字体名必须位于中文字体名之前。
-3. 如果字体名中包含空格、#、$等符号，则该字体必须加英文状态下的单引号或双引号，例如font-family: "Times New Roman";。
+3. 如果字体名中包含空格、#、$等符号，则该字体必须加英文状态下的单引号或双引号，例如font-family: &quot;Times New Roman&quot;;。
 4. 尽量使用系统默认字体，保证在任何用户的浏览器中都能正确显示。</code></pre><h3 id="CSS-Unicode字体"><a href="#CSS-Unicode字体" class="headerlink" title="CSS Unicode字体"></a>CSS Unicode字体</h3><ul>
 <li><p>为什么使用 Unicode字体</p>
 <ul>
@@ -614,10 +614,10 @@
 </li>
 <li><p>解决：</p>
 <ul>
-<li><p>方案一： 你可以使用英文来替代。 比如<code>font-family:"Microsoft Yahei"</code>。</p>
+<li><p>方案一： 你可以使用英文来替代。 比如<code>font-family:&quot;Microsoft Yahei&quot;</code>。</p>
 </li>
 <li><p>方案二： 在 CSS 直接使用 Unicode 编码来写字体名称可以避免这些错误。使用 Unicode 写中文字体名称，浏览器是可以正确的解析的。</p>
-<pre><code>font-family: "\5FAE\8F6F\96C5\9ED1";   表示设置字体为“微软雅黑”。</code></pre></li>
+<pre><code>font-family: &quot;\5FAE\8F6F\96C5\9ED1&quot;;   表示设置字体为“微软雅黑”。</code></pre></li>
 </ul>
 </li>
 </ul>
@@ -956,7 +956,7 @@ line-height: 24px;</code></pre><h2 id="2-4-text-indent-首行缩进"><a href="#2
 </ol>
 <h1 id="4-sublime快捷操作emmet语法"><a href="#4-sublime快捷操作emmet语法" class="headerlink" title="4. sublime快捷操作emmet语法"></a>4. sublime快捷操作emmet语法</h1><p>Emmet的前身是Zen coding,它使用缩写,来提高html/css的编写速度。</p>
 <ol>
-<li><p>生成标签 直接输入标签名 按tab键即可   比如  div   然后tab 键， 就可以生成 </p><div></div><p></p>
+<li><p>生成标签 直接输入标签名 按tab键即可   比如  div   然后tab 键， 就可以生成 <div></div></p>
 </li>
 <li><p>如果想要生成多个相同标签  加上 * 就可以了 比如   div*3  就可以快速生成3个div</p>
 </li>
@@ -968,29 +968,11 @@ line-height: 24px;</code></pre><h2 id="2-4-text-indent-首行缩进"><a href="#2
 </li>
 <li><p>如果生成的div 类名是有顺序的， 可以用 自增符号  $     </p>
 <pre><code>.demo$*3        
-&lt;div class="demo1"&gt;&lt;/div&gt;
-&lt;div class="demo2"&gt;&lt;/div&gt;
-&lt;div class="demo3"&gt;&lt;/div&gt;</code></pre></li>
+&lt;div class=&quot;demo1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;demo2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;demo3&quot;&gt;&lt;/div&gt;</code></pre></li>
 </ol>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
             </div>
             <hr/>
 
@@ -1561,7 +1543,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">66.9k</span>&nbsp;字
+                class="white-color">65.6k</span>&nbsp;字
             
             
             

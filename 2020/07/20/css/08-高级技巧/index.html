@@ -928,25 +928,7 @@ text-overflow：ellipsis ； 当对象内文本溢出时显示省略标记（...
 <li>我们4个边框都要写， 只保留需要的边框颜色，其余的不能省略，都改为 transparent 透明就好了</li>
 <li>为了照顾兼容性 低版本的浏览器，加上 font-size: 0;  line-height: 0;</li>
 </ol>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
             </div>
             <hr/>
 
@@ -1516,7 +1498,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">66.9k</span>&nbsp;字
+                class="white-color">65.6k</span>&nbsp;字
             
             
             
