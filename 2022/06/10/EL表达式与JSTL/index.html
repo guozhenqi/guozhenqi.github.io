@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java基础/day13, null">
+    <meta name="keywords" content="EL表达式与JSTL, null">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>java基础/day13 | null</title>
+    <title>EL表达式与JSTL | null</title>
    
 
     <link rel="icon" type="image/png" href="https://fastly.jsdelivr.net/gh/guozhenqi/cdn-speed@1.8/source//lll.png">
@@ -358,12 +358,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://fastly.jsdelivr.net/gh/guozhenqi/cdn-speed@1.8/source//medias/featureimages/29.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://fastly.jsdelivr.net/gh/guozhenqi/cdn-speed@1.8/source//medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">java基础/day13</h1>
+                    <h1 class="description center-align post-title">EL表达式与JSTL</h1>
                 </div>
             </div>
         </div>
@@ -480,12 +480,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/java%E5%9F%BA%E7%A1%80/">
-                                <span class="chip bg-color">java基础</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%B4%9B%E9%87%8C%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F/">
-                                <span class="chip bg-color">洛里第一学期</span>
+                            <a href="/tags/javaweb/">
+                                <span class="chip bg-color">javaweb</span>
                             </a>
                         
                     </div>
@@ -496,8 +492,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/java%E5%9F%BA%E7%A1%80/" class="post-category">
-                                java基础
+                            <a href="/categories/javaweb/" class="post-category">
+                                javaweb
                             </a>
                         
                     </div>
@@ -509,28 +505,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-16
+                    2022-06-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-16
+                    2022-06-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    811
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    6 分
                 </div>
                 
 
@@ -545,160 +541,107 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="自定义异常-自己定义的报错情况"><a href="#自定义异常-自己定义的报错情况" class="headerlink" title="自定义异常:自己定义的报错情况"></a>自定义异常:自己定义的报错情况</h2><p>​    继承自Exception的自定义异常:编译期异常<br>​    继承自RuntimeException的自定义异常:运行时异常</p>
-<h3 id="throw和throws"><a href="#throw和throws" class="headerlink" title="throw和throws"></a>throw和throws</h3><p>​     throws:异常的抛出，是处理异常的一种方式。<br>​     throw:创建异常。自定义异常的方法。</p>
-<pre class=" language-java"><code class="language-java"> <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BalanceException</span> <span class="token keyword">extends</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
-​         <span class="token comment" spellcheck="true">//提供构造方法:</span>
-​         <span class="token keyword">public</span> <span class="token function">BalanceException</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-​         <span class="token punctuation">}</span>     
-<span class="token keyword">public</span> <span class="token function">BalanceException</span><span class="token punctuation">(</span>String message<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-         <span class="token keyword">super</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
-     <span class="token punctuation">}</span>
- <span class="token punctuation">}</span>
-
- <span class="token keyword">class</span> <span class="token class-name">Account</span> <span class="token punctuation">{</span>
-     <span class="token comment" spellcheck="true">//属性:</span>
-     <span class="token keyword">private</span> <span class="token keyword">double</span> balance<span class="token punctuation">;</span>
-
-     <span class="token comment" spellcheck="true">//提供构造方法:</span>
-     <span class="token keyword">public</span> <span class="token function">Account</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-     <span class="token punctuation">}</span>
-
-     <span class="token keyword">public</span> <span class="token function">Account</span><span class="token punctuation">(</span><span class="token keyword">double</span> balance<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-         <span class="token keyword">this</span><span class="token punctuation">.</span>balance <span class="token operator">=</span> balance<span class="token punctuation">;</span>
-     <span class="token punctuation">}</span>
-
-     <span class="token comment" spellcheck="true">//方法:</span>
-     <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setBalance</span><span class="token punctuation">(</span><span class="token keyword">double</span> balance<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-         <span class="token keyword">this</span><span class="token punctuation">.</span>balance <span class="token operator">=</span> balance<span class="token punctuation">;</span>
-     <span class="token punctuation">}</span>
-
-     <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getBalance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-         <span class="token keyword">return</span> balance<span class="token punctuation">;</span>
-     <span class="token punctuation">}</span>
-
-     <span class="token comment" spellcheck="true">//定义一个取款的方法:</span>
-     <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">whitdraw</span><span class="token punctuation">(</span><span class="token keyword">double</span> money<span class="token punctuation">)</span> <span class="token keyword">throws</span> BalanceException <span class="token punctuation">{</span>
-         <span class="token keyword">if</span> <span class="token punctuation">(</span>money <span class="token operator">></span> balance<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-             <span class="token comment" spellcheck="true">//发生异常</span>
-             <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">BalanceException</span><span class="token punctuation">(</span><span class="token string">"余额不足!!!!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-         <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-             balance <span class="token operator">-=</span> money<span class="token punctuation">;</span>
-             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"取款后的余额是:"</span> <span class="token operator">+</span> balance<span class="token punctuation">)</span><span class="token punctuation">;</span>
-         <span class="token punctuation">}</span>
-     <span class="token punctuation">}</span>
- <span class="token punctuation">}</span>
-
- <span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
-     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> BalanceException <span class="token punctuation">{</span>
-         <span class="token comment" spellcheck="true">//创建对象</span>
-         Account account <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Account</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-         <span class="token keyword">try</span> <span class="token punctuation">{</span>
-             account<span class="token punctuation">.</span><span class="token function">whitdraw</span><span class="token punctuation">(</span><span class="token number">600</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-         <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">BalanceException</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
-             account<span class="token punctuation">.</span><span class="token function">setBalance</span><span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-             account<span class="token punctuation">.</span><span class="token function">whitdraw</span><span class="token punctuation">(</span><span class="token number">600</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-         <span class="token punctuation">}</span>
-     <span class="token punctuation">}</span>
- <span class="token punctuation">}</span></code></pre>
-<h3 id="案例代码练习"><a href="#案例代码练习" class="headerlink" title="案例代码练习:"></a>案例代码练习:</h3><pre class=" language-java"><code class="language-java">   自定义一个学生类，属性有 姓名 年龄，
-    如果用户在给学生年龄赋值时，
-    年龄小于<span class="token number">0</span>抛出一个AgeLT0Exception，
-    大于<span class="token number">150</span> 抛出一个AgeGT150Exception
-     <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AgeLT0Exception</span> <span class="token keyword">extends</span> <span class="token class-name">RuntimeException</span> <span class="token punctuation">{</span>
-         <span class="token keyword">public</span> <span class="token function">AgeLT0Exception</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
-         <span class="token keyword">public</span> <span class="token function">AgeLT0Exception</span><span class="token punctuation">(</span>String message<span class="token punctuation">)</span><span class="token punctuation">{</span>
-             <span class="token keyword">super</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
-         <span class="token punctuation">}</span>
-     <span class="token punctuation">}</span>
-     <span class="token keyword">class</span> <span class="token class-name">AgeGT150Exception</span> <span class="token keyword">extends</span> <span class="token class-name">Exception</span><span class="token punctuation">{</span>
-         <span class="token keyword">public</span> <span class="token function">AgeGT150Exception</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
-         <span class="token keyword">public</span> <span class="token function">AgeGT150Exception</span><span class="token punctuation">(</span>String message<span class="token punctuation">)</span><span class="token punctuation">{</span>
-             <span class="token keyword">super</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
-         <span class="token punctuation">}</span>
-     <span class="token punctuation">}</span>
-     <span class="token comment" spellcheck="true">//学生类:</span>
-     <span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">{</span>
-         <span class="token comment" spellcheck="true">//属性:</span>
-         <span class="token keyword">private</span> String stuName<span class="token punctuation">;</span>
-         <span class="token keyword">private</span> <span class="token keyword">int</span> age<span class="token punctuation">;</span>
-         <span class="token comment" spellcheck="true">//方法:getter和setter方法:</span>
-         <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setStuName</span><span class="token punctuation">(</span>String stuName<span class="token punctuation">)</span><span class="token punctuation">{</span>
-              <span class="token keyword">this</span><span class="token punctuation">.</span>stuName<span class="token operator">=</span>stuName<span class="token punctuation">;</span>
-         <span class="token punctuation">}</span>
-         <span class="token keyword">public</span> String <span class="token function">getStuName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-             <span class="token keyword">return</span> stuName<span class="token punctuation">;</span>
-         <span class="token punctuation">}</span>
-         <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-             <span class="token keyword">return</span> age<span class="token punctuation">;</span>
-         <span class="token punctuation">}</span>
-         <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setAge</span><span class="token punctuation">(</span><span class="token keyword">int</span> age<span class="token punctuation">)</span> <span class="token keyword">throws</span> AgeGT150Exception <span class="token punctuation">{</span>
-              <span class="token keyword">if</span><span class="token punctuation">(</span>age <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-                  <span class="token comment" spellcheck="true">//报异常</span>
-                  <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">AgeLT0Exception</span><span class="token punctuation">(</span><span class="token string">"年龄小于0 !!!!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-              <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>age <span class="token operator">></span> <span class="token number">150</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-                  <span class="token comment" spellcheck="true">//报异常</span>
-                  <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">AgeGT150Exception</span><span class="token punctuation">(</span><span class="token string">"年龄大于150！！！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-              <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
-                  <span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token operator">=</span>age<span class="token punctuation">;</span>
-              <span class="token punctuation">}</span>
-         <span class="token punctuation">}</span>
-     <span class="token punctuation">}</span>
-     <span class="token comment" spellcheck="true">//测试类:</span>
-     <span class="token keyword">class</span> <span class="token class-name">TestStu</span><span class="token punctuation">{</span>
-         <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> AgeGT150Exception <span class="token punctuation">{</span>
-             <span class="token comment" spellcheck="true">//创建学生类的对象:</span>
-             Student stu<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-             stu<span class="token punctuation">.</span><span class="token function">setAge</span><span class="token punctuation">(</span><span class="token number">156</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-         <span class="token punctuation">}</span>
-     <span class="token punctuation">}</span></code></pre>
-<h2 id="集合"><a href="#集合" class="headerlink" title="集合:"></a>集合:</h2><p>​     集合（collection）有时又称为容器，<br>​     它是一个对象，能将具有相同性质的多个元素<br>​     汇聚成一个整体<br>​     集合被用于存储、获取、操纵和传输聚合的数据</p>
-<h3 id="集合接口"><a href="#集合接口" class="headerlink" title="集合接口:"></a>集合接口:</h3><p>​     Collection接口:</p>
-<blockquote>
-<p>​       int size():获取集合的长度.<br>​       boolean isEmpty():判断集合是否为空<br>​       boolean add(E element):给集合添加元素。<br>​       boolean remove(Object o):删除指定元素<br>​       Iterator<E> iterator():返回在集合元素上进行迭代的迭代器<br>​       void clear():清空集合。<br>​       List集合接口:<br>​       特点:1.有序的集合。<br>​            2.可以包含重复的数据.<br>​        E get(int index):根据我们的下标获取指定元素。<br>​        E remove(int index):移除指定下标的集合。<br>​        &lt;泛型&gt;:指定集合存放的数据类型.<br>​       </E></p>
+                <h3 id="1-EL表达式"><a href="#1-EL表达式" class="headerlink" title="1.EL表达式"></a>1.EL表达式</h3><h4 id="1-1概述"><a href="#1-1概述" class="headerlink" title="1.1概述"></a>1.1概述</h4><blockquote>
+<p>EL全称为Expression Language，即表达式语言。它是JSP 2.0引入的一个新内容。EL可以简化JSP开发中的对象引用，从而规范页面代码，增加程序的可读性及可维护性。EL为不熟悉Java语言页面开发的人员提供了一个开发JavaWeb应用的新途径。</p>
 </blockquote>
-<pre class=" language-java"><code class="language-java"> <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestList</span> <span class="token punctuation">{</span>
-            <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token comment" spellcheck="true">//创建list集合对象:</span>
-                List<span class="token operator">&lt;</span>String<span class="token operator">></span> list<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token comment" spellcheck="true">//往集合中存放数据:</span>
-                 <span class="token comment" spellcheck="true">//size():获取集合的长度.</span>
-               <span class="token keyword">int</span> length<span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"集合长度是:"</span><span class="token operator">+</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token comment" spellcheck="true">//boolean isEmpty():判断集合是否为空</span>
-                <span class="token keyword">boolean</span> bo<span class="token operator">=</span>list<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"集合是否为空:"</span><span class="token operator">+</span>bo<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token comment" spellcheck="true">//boolean add(E element):给集合添加元素。</span>
-                <span class="token keyword">boolean</span> bo1<span class="token operator">=</span>list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"张三"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//0</span>
-                list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"张三"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//1</span>
-                list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"张三2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//2</span>
-                list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"张三3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//3</span>
-                list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"张三4"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//4</span>
-                list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"张三5"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"添加元素:"</span><span class="token operator">+</span>bo1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"集合长度是:"</span><span class="token operator">+</span>list<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-               <span class="token comment" spellcheck="true">//集合的遍历:</span>
-                <span class="token comment" spellcheck="true">//for循环遍历:</span>
-                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"---for循环遍历---"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>list<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//声明一个变量代表下标</span>
-                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>list<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                <span class="token comment" spellcheck="true">//增强for循环:</span>
-                <span class="token keyword">for</span><span class="token punctuation">(</span>String str<span class="token operator">:</span>list<span class="token punctuation">)</span><span class="token punctuation">{</span>
-                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                <span class="token comment" spellcheck="true">//迭代器遍历:</span>
-                Iterator it<span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">iterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">while</span><span class="token punctuation">(</span>it<span class="token punctuation">.</span><span class="token function">hasNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>it<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                <span class="token comment" spellcheck="true">//Lambda表达式遍历:</span>
-                list<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span><span class="token punctuation">{</span>
-                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span></code></pre>
-<p>​       </p>
+<h4 id="1-2语法"><a href="#1-2语法" class="headerlink" title="1.2语法"></a>1.2语法</h4><blockquote>
+<p>EL的语法非常简单，都是以“${”符号开始，以“}”符号结束的，具体格式如下:</p>
+<p>${表达式}</p>
+</blockquote>
+<h4 id="1-3举例"><a href="#1-3举例" class="headerlink" title="1.3举例"></a>1.3举例</h4><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//使用EL表达式绑定的数据</span>
+        req<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">,</span><span class="token string">"guo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        req<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">"def"</span><span class="token punctuation">,</span><span class="token string">"li"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//开启el表达式        </span>
+        <span class="token operator">&lt;</span><span class="token operator">%</span>@ page isELIgnored<span class="token operator">=</span><span class="token string">"false"</span> <span class="token operator">%</span><span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">--</span>方式一，通过原来方式<span class="token operator">--</span><span class="token operator">%</span><span class="token operator">></span>
+       <span class="token operator">&lt;</span><span class="token operator">%=</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span> request<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token operator">%</span><span class="token operator">></span>
+       <span class="token operator">&lt;</span><span class="token operator">%=</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span> request<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">"def"</span><span class="token punctuation">)</span><span class="token operator">%</span><span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">--</span>方式二，使用el表达式获取，需要在网页头部开启el表达式<span class="token operator">--</span><span class="token operator">%</span><span class="token operator">></span>
+       <span class="token operator">&lt;</span>hr<span class="token operator">></span>
+       $<span class="token punctuation">{</span>abc<span class="token punctuation">}</span>
+       $<span class="token punctuation">{</span>def<span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p>使用EL同样可以成功获取Servlet中存储的数据，但EL明显简化了JSP页面的书写，使程序简洁易维护。另外，当域对象里面的值不存在时，使用EL获取域对象里面的值时返回空字符串；而使用==Java方式获取时，如果返回值是null，会报空指针异常==，所以在实际开发中推荐使用EL的方式获取域对象中存储的数据。</p>
+</blockquote>
+<h4 id="1-4-命名规范"><a href="#1-4-命名规范" class="headerlink" title="1.4 命名规范"></a>1.4 命名规范</h4><blockquote>
+<p>在EL中，经常需要使用一些符号标记一些名称，如变量名、自定义函数名等，这些符号被称为标识符。EL中的标识符可以由任意的大小写字母、数字和下划线组成，为了避免出现非法的标识符，在定义标识符时还需要遵循以下规范：</p>
+<p>（1）不能以数字开头。</p>
+<p>（2）不能是EL中的关键字，如and、or、gt等。</p>
+<p>（3）不能是EL隐式对象，如pageContext。</p>
+<p>（4）不能包含单引号（’）、双引号（”）、减号（-）和正斜线（/）等特殊字符。</p>
+</blockquote>
+<h3 id="2-el表达式的作用"><a href="#2-el表达式的作用" class="headerlink" title="2.el表达式的作用"></a>2.el表达式的作用</h3><pre class=" language-java"><code class="language-java"><span class="token operator">&lt;</span><span class="token operator">%</span>@ taglib prefix<span class="token operator">=</span><span class="token string">"c"</span> uri <span class="token operator">=</span><span class="token string">"http://java.sun.com/jsp/jstl/core"</span><span class="token operator">%</span><span class="token operator">></span>
+<span class="token comment" spellcheck="true">//替换项目中中的代码</span>
+    <span class="token operator">&lt;</span>c<span class="token operator">:</span>forEach var<span class="token operator">=</span><span class="token string">"u"</span> items<span class="token operator">=</span><span class="token string">"${users}"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>p<span class="token operator">></span>
+            $<span class="token punctuation">{</span>u<span class="token punctuation">.</span>id<span class="token punctuation">}</span> $<span class="token punctuation">{</span>u<span class="token punctuation">.</span>code<span class="token punctuation">}</span> $<span class="token punctuation">{</span>u<span class="token punctuation">.</span>password<span class="token punctuation">}</span>
+            <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"del?id=${u.id}"</span><span class="token operator">></span> 删除<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span>
+            <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"toUpda?id=${u.id}"</span> <span class="token operator">></span>修改<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+     <span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>forEach<span class="token operator">></span>
+
+     <span class="token operator">&lt;</span>form action<span class="token operator">=</span><span class="token string">'upda'</span> method<span class="token operator">=</span><span class="token string">'post'</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>p<span class="token operator">></span>id<span class="token operator">:</span><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'text'</span> name<span class="token operator">=</span><span class="token string">'id'</span> readonly value<span class="token operator">=</span><span class="token string">'${u.id}'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+            <span class="token operator">&lt;</span>p<span class="token operator">></span>账号<span class="token operator">:</span><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'text'</span> name<span class="token operator">=</span><span class="token string">'zh'</span> value<span class="token operator">=</span><span class="token string">'${u.code}'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+            <span class="token operator">&lt;</span>p<span class="token operator">></span>密码<span class="token operator">:</span><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'password'</span> name<span class="token operator">=</span><span class="token string">'mm'</span> value<span class="token operator">=</span><span class="token string">'${u.password}'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+            <span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'submit'</span> value<span class="token operator">=</span><span class="token string">'修改'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+            <span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'reset'</span> value<span class="token operator">=</span><span class="token string">'重置'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>form<span class="token operator">></span>    </code></pre>
+<h4 id="2-1访问javabean-的属性"><a href="#2-1访问javabean-的属性" class="headerlink" title="2.1访问javabean 的属性"></a>2.1访问javabean 的属性</h4><p>通常情况下的JavaBean指的是一个公共的类，含有一个空参的构造方法, 一些属性以及访问这些属性提供get/set方法,方法名与属性名需要符合一定的规范。使用EL表达式访问Bean属性时可使用如下两种方式<br>-方式一: ${对象名.属性名}</p>
+<p>-方式二: ${对象名[“属性名” ]}</p>
+<h4 id="2-2输出简单的运行结果"><a href="#2-2输出简单的运行结果" class="headerlink" title="2.2输出简单的运行结果"></a>2.2<strong>输出简单的运行结果</strong></h4><p>EL表达式可以做一些简单的计算，可将结果直接输出或给JSP标签的属性赋值</p>
+<p>算术运算： +   -    *   /   %      注意：+号只能求和，不能用于连接字符串</p>
+<p>逻辑运算：&amp;&amp;     ||       ！</p>
+<p>关系运算：  &gt;=   &gt;   &lt;=    &lt; ==   !=</p>
+<p>empty :用来判断-个字符串是否为空,或者-个集合是否为空，以下四种情况结果为true :空字符串，空的集合,值为null ,找不到对应的值</p>
+<h4 id="2-3获取请求参数值"><a href="#2-3获取请求参数值" class="headerlink" title="2.3获取请求参数值"></a>2.3获取请求参数值</h4><pre class=" language-java"><code class="language-java">$ <span class="token punctuation">{</span> param <span class="token punctuation">.</span> username <span class="token punctuation">}</span>
+等价于
+request<span class="token punctuation">.</span><span class="token function">getParameter</span> <span class="token punctuation">(</span> "username” <span class="token punctuation">)</span> <span class="token punctuation">;</span>
+$ <span class="token punctuation">{</span> paramValues <span class="token punctuation">.</span> city<span class="token punctuation">}</span>
+等价于
+request<span class="token punctuation">.</span><span class="token function">getParameterValues</span><span class="token punctuation">(</span> <span class="token string">"city"</span> <span class="token punctuation">)</span> <span class="token punctuation">;</span>
+</code></pre>
+<h3 id="3-JSTL"><a href="#3-JSTL" class="headerlink" title="3.JSTL"></a>3.JSTL</h3><h4 id="3-1概述"><a href="#3-1概述" class="headerlink" title="3.1概述"></a>3.1概述</h4><blockquote>
+<p>JSP就支持使用自定义标签，使用自定义标签大大降低了JSP页面的复杂度，同时增强了代码的重用性。</p>
+<p>JSTL : ( JSP Standard Tag Library )JSP标准标签库JSP标签是Sun公司定义的一套标准，由Apache组织基于这套标准开发的一套标签库后又转给Sun公司，被称为JSTL，成为了JavaEE5.0的核心</p>
+</blockquote>
+<h4 id="3-2-引入"><a href="#3-2-引入" class="headerlink" title="3.2 引入"></a>3.2 引入</h4><pre class=" language-java"><code class="language-java"><span class="token operator">&lt;</span>dependency<span class="token operator">></span>
+  <span class="token operator">&lt;</span>groupId<span class="token operator">></span>Jstl<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">></span>
+  <span class="token operator">&lt;</span>artifactId<span class="token operator">></span>Jstl<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">></span>
+  <span class="token operator">&lt;</span>version<span class="token operator">></span><span class="token number">1.2</span><span class="token operator">&lt;</span><span class="token operator">/</span>version<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">></span>
+使用taglib指令导入要使用的JSP标签
+<span class="token operator">&lt;</span> <span class="token operator">%</span><span class="token annotation punctuation">@taglib</span> uri<span class="token operator">=</span><span class="token string">""</span> prefix<span class="token operator">=</span><span class="token string">""</span><span class="token operator">%</span><span class="token operator">></span>
+uri <span class="token operator">:</span> JSP标签的命名空间
+prefix <span class="token operator">:</span>命名空间的前缀
+</code></pre>
+<h4 id="3-3常用标签库"><a href="#3-3常用标签库" class="headerlink" title="3.3常用标签库"></a>3.3常用标签库</h4><table>
+<thead>
+<tr>
+<th>使用核心标签库的taglib指令格式如下:<br>&lt;%@ taglib prefix=”c” url= http:/java.sun.com/jsp/jst/core” %&gt;<br>核心标签库主要用于完成JSP页面的常用功能，包括JSTL的表达式标签、 URL标签、 流程控制标签。<br>例如，用于输出文本内容的&lt;c:out&gt;标签、用于条件判断的&lt;c:if&gt; 标签、用于迭代循环的<br>&lt;c:forEach&gt;标签等。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>使用格式标签库的taglib指令格式如下:<br>&lt;%@ taglib prefix “fmt” ut=ttp://java.sun.com/jsp/jt/fmt”%*&gt;<br>国际化/格式化标签库，它包含实现Web应用程序的国际化标签和格式化标签。例如，设置JSP页面<br>的本地信息、设置JSP页面的时区、 使日期按照本地格式显示等。</td>
+</tr>
+<tr>
+<td>使用XML标签库的taglib指令格式如下:<br>&lt;%@ taglib prefx=’ “xml” url= <a href="http://java.sun.com/jsp/jstl/xml&quot;" target="_blank" rel="noopener">http://java.sun.com/jsp/jstl/xml&quot;</a> %&gt;<br>XML文档的标签库，它包含对XML文档中的数据进行操作的标签。例如，解析XML文件、输出XML<br>文档中的内容，以及迭代处理XML文档中的元素。XML广泛应用于Web开发,使用XML标签库处理<br>XML文档更加简单方便。</td>
+</tr>
+<tr>
+<td>使用函数标签库的taglib指令格式如下:<br>&lt;%@ taglib prefix= “fn” url= “<a href="http://java.sun.com/jsp/jst/functions&quot;%&gt;" target="_blank" rel="noopener">http://java.sun.com/jsp/jst/functions&quot;%&gt;</a><br>函数标签库，它提供了一套自定义EL函数,包含了JSP网页制作者经常要用到的字符串操作。例如,<br>提取字符串中的子字符串、获取字符串的长度等。</td>
+</tr>
+</tbody></table>
+<h4 id="3-4-标签库使用"><a href="#3-4-标签库使用" class="headerlink" title="3.4 标签库使用"></a>3.4 标签库使用</h4><ol>
+<li>用来遍历集合或者数组<br>语法:<br>&lt;c: forEach var= “”items= “”; &gt;<br>&lt;/c: forEach&gt;<br>items属性 :指定要遍历的集合 ,-般使用EL表达式来复制<br>var属性 :指定一个绑定名称,容器每次从集合中取一个对象,然后绑定到pageContext对象上<br>varStatus属性 :指定一个绑定名称,绑定值是一个由容器创建的对象,该对象封装了当前迭代的状态</li>
+<li>语法:<C : choose>
+<C: when test="“”"> 
+...
+<C : otherwise> 
+
+when表示一 个处理分支,当test属性为true时会执行该分支,可以出现1次或者多次
+otherwise表示例外,可以出现0次或1次</C></C:></C></li>
+<li>语法:<br>&lt;c:if test =“”var=<br>scope=””&gt;<br><br>当test属性值为true时,执行标签体的内容。test属性可以使用EL表达式赋值<br>var属性:指定一个绑定名称<br>scope属性:指定绑定的范围( page , request,session , application )<br>注: var和scope要配合使用</li>
+</ol>
 
             </div>
             <hr/>
@@ -724,7 +667,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://guozhenqi.github.io/2022/02/16/java%E5%9F%BA%E7%A1%80/day13/">https://guozhenqi.github.io/2022/02/16/java%E5%9F%BA%E7%A1%80/day13/</a>
+                    <a href="https://guozhenqi.github.io/2022/06/10/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8EJSTL/">https://guozhenqi.github.io/2022/06/10/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8EJSTL/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -762,12 +705,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/java%E5%9F%BA%E7%A1%80/">
-                                    <span class="chip bg-color">java基础</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%B4%9B%E9%87%8C%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F/">
-                                    <span class="chip bg-color">洛里第一学期</span>
+                                <a href="/tags/javaweb/">
+                                    <span class="chip bg-color">javaweb</span>
                                 </a>
                             
                         </div>
@@ -957,63 +896,51 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/03/03/%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE/">
+                <a href="/2022/06/10/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8EJSTL/">
                     <div class="card-image">
                         
                         
-                        <img src="https://fastly.jsdelivr.net/gh/guozhenqi/cdn-speed@1.8/source//medias/featureimages/1.jpg" class="responsive-img" alt="电脑配置">
+                        <img src="https://fastly.jsdelivr.net/gh/guozhenqi/cdn-speed@1.8/source//medias/featureimages/5.jpg" class="responsive-img" alt="EL表达式与JSTL">
                         
-                        <span class="card-title">电脑配置</span>
+                        <span class="card-title">EL表达式与JSTL</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            配置一
-
-
-
-配置一
-价格浮动（2022 3月份）
-
-
-
-
-处理器/主板
-i5 10400f+微星B460迫击炮
-1349
-
-
-内存
-铭瑄终结者8×2 2666
-345
-
-
-固态
-西数sn500 500g
-369
-
-
-显卡
-RTX3050
-
+                            1.EL表达式1.1概述
+EL全称为Expression Language，即表达式语言。它是JSP 2.0引入的一个新内容。EL可以简化JSP开发中的对象引用，从而规范页面代码，增加程序的可读性及可维护性。EL为不熟悉Java语言页面开发
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-10
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            gzq
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/javaweb/" class="post-category">
+                                    javaweb
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/javaweb/">
+                        <span class="chip bg-color">javaweb</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1025,41 +952,53 @@ RTX3050
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/02/16/java%E5%9F%BA%E7%A1%80/day12/">
+                <a href="/2022/03/24/js%E9%AB%98%E7%BA%A7/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
                     <div class="card-image">
                         
                         
-                        <img src="https://fastly.jsdelivr.net/gh/guozhenqi/cdn-speed@1.8/source//medias/featureimages/30.jpg" class="responsive-img" alt="java基础/day12">
+                        <img src="https://fastly.jsdelivr.net/gh/guozhenqi/cdn-speed@1.8/source//medias/featureimages/14.jpg" class="responsive-img" alt="js高级/正则表达式">
                         
-                        <span class="card-title">java基础/day12</span>
+                        <span class="card-title">js高级/正则表达式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-categories: 
-
-java基础tags:
-java基础
-洛里第一学期cover: true
-–## Lambda表达式调用类里面的静态方法:
-
-如果是静态方法，则是ClassName::methodName。
-    如 Obj
+                            JavaScript高级第04天笔记1.正则表达式概述1.1什么是正则表达式正则表达式（ Regular Expression ）是用于匹配字符串中字符组合的模式。在JavaScript中，正则表达式也是对象。
+正则表通常被用来检索、替换那
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-24
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            gzq
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/js%E9%AB%98%E7%BA%A7/" class="post-category">
+                                    js高级
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/js%E9%AB%98%E7%BA%A7/">
+                        <span class="chip bg-color">js高级</span>
+                    </a>
+                    
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">黑马笔记</span>
+                    </a>
+                    
                 </div>
                 
             </div>
